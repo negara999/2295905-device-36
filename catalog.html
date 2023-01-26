@@ -14,7 +14,10 @@
       </div>
       <ul class="navigation-list">
         <li class="navigation-item">
-          <a href="#" class="navigation-user"><img src="" class="search-icon"><span>Войти</span></a>
+          <a href="#" class="navigation-user"><img src="" class="search-icon"><span>Коля Петухов</span></a>
+        </li>
+        <li class="navigation-item visually-hidden">
+          <a href="#" class="navigation-logout"><span style="color:gray">Выйти</span></a>
         </li>
         <li class="navigation-item">
         <a href="#" class="navigation-compare"><img src="" class="search-icon"><span>Сравнить</span></a>
@@ -23,8 +26,6 @@
           <a href="#" class="navigation-shopping-cart"><img src="" class="search-icon"><span>Корзина</span></a>
         </li>
       </ul>
-        <img src="" alt="login" class="login-icon">
-        <button type="button" class="login-button">Войти</button>
       <ul class="navigation-list">
         <li class="navigation-item">
           <a href="#" class="navigation-button">Каталог товаров</a>
@@ -62,5 +63,75 @@
       </li>
     </nav>
     </header>
+    <main class="page-main">
+      <h2 class="page-title">Моноподы для селфи</h2>
+      <p class="main">Главная</p>
+      <p class="products">Каталог товаров</p>
+      <p class="page-product">Моноподы для селфи</p>
+      <section><h4 class="filter">Фильтр:</h4></section>
+      <section><h4 class="sorting">Сортировка:</h4>
+      <select>
+        <option class="top">Популярные</option>
+      </select>
+      <select>
+        <option class="previous"></option>
+      </select>
+    </section>
+    <section>
+      <h4 class="costing">Стоимость</h4>
+      от 0<input type="range">до 5000
+    </section>
+    <section>
+      <h4 class="color">Цвет</h4>
+      <input type="checkbox" class="black-color" checked>Черный
+      <input type="checkbox" class="white color" checked>Белый
+      <input type="checkbox" class="blue-color">Синий
+      <input type="checkbox" class="red-color">Красный
+      <input type="checkbox" class="pink-color">Розовый
+    </section>
+    <section>
+      <h4 class="bluetooth">Bluetooth</h4>
+      <input type="radio" checked>Есть
+      <input type="radio">Нет
+    </section>
+    <a href="#" class="show-more">Показать</a>
+    <section class="products-photos">
+      <img src="image.png" class="amateur-selfie-stick">
+        <h5 class="selfie-stick">Любительская селфи-палка</h5>
+        <h5 style="color:gray">500 ₽</h5>
+      <img src="image.png" class="professional-selfie-stick">
+        <h5 class="selfie-stick">Профессиональная селфи-палка </h5>
+        <h5 style="color:gray">1 500 ₽</h5>
+      <img src="image.png" class="waterproof-selfie-stick">
+        <h5 class="selfie-stick">Непотопляемая селфи-палка</h5>
+        <h5 style="color:gray">2 500 ₽</h5>
+      <img src="image.png" class="carryon-selfie-stick">
+      <h5 class="selfie-stick">Селфи-палка «Следуй за мной»</h5>
+      <h5 style="color: gray">1 500 ₽</h5>
+      <button class="more-products">ЗАГРУЗИТЬ ЕЩЁ</button>
+      <ul>
+        <li><button class="turn-back-page">Назад</button></li>
+        <li><button class="first-page">1</button></li>
+        <li><button class="second-page">2</button></li>
+        <li><button class="third-page">3</button></li>
+        <li><button>...</button></li>
+        <li><button class="last-page">15</button></li>
+        <li><button class="turn-next-page">Вперёд</button></li>
+      </ul>
+    </section>
+    </main>
+    <footer>
+      <h2 class="site-name">device</h2>
+      <p>Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+      <a href="#" class="shipping">Доставка</a>
+      <a href="#" class="guarantee">Гарантия</a>
+      <a href="#" class="contacts">Контакты</a>
+      <a href="Тел.: +7 (812) 812-12-12" class="contacts-phone">Тел.: +7 (812) 812-12-12</a>
+      <ul class="social-list">
+        <li class="social-item"><a href="https://t.me/htmlacademy">Telegram</a></li>
+        <li class="social-item"><a href="https://www.youtube.com/user/htmlacademyru">YouTube</a></li>
+        <li class="social-item"><a href="https://twitter.com/htmlacademy_ru">Twitter</a></li>
+      </ul>
+    </footer>
 </body>
 </html>
