@@ -9,29 +9,31 @@
       <h1 class="visually-hidden">device</h1>
       <nav class="navigation">
         <div class="search-box">
-          <img src="" alt="search" class="search-icon">
-          <input type="text" placeholder="Поиск по сайту" class="search-text">
-        <button type="button" class="search-button">Найти</button>
+          <img src="#"  alt="search-icon" class="search-icon">
+          <label>
+            <input type="search" placeholder="Поиск по сайту" class="search-text">
+          </label>
+            <button type="button" class="search-button">Найти</button>
       </div>
       <ul class="navigation-list">
         <li class="navigation-item">
-          <a href="#" class="navigation-user"><img src="#" class="search-icon"><span>Войти</span></a>
+          <a href="#" class="navigation-user"><img src="#" alt="search-icon" class="search-icon"><span>Войти</span></a>
         </li>
         <li class="navigation-item">
-        <a href="#" class="navigation-compare"><img src="#" class="search-icon"><span>Сравнить</span></a>
+        <a href="#" class="navigation-compare"><img src="#" alt="search-icon" class="search-icon"><span>Сравнить</span></a>
         </li>
         <li class="navigation-item">
-          <a href="#" class="navigation-shopping-cart"><img src="#" class="search-icon"><span>Корзина</span></a>
+          <a href="#" class="navigation-shopping-cart"><img src="#" alt="search-icon" class="search-icon"><span>Корзина</span></a>
         </li>
       </ul>
-        <img src="" alt="login" class="login-icon">
+        <img src="#" alt="login" class="login-icon">
         <button type="button" class="login-button">Войти</button>
       <ul class="navigation-list">
         <li class="navigation-item">
           <a href="#" class="navigation-button">Каталог товаров</a>
         </li>
-        <button type="button" class="search-sub-navigation-items"></button>
       </ul>
+      <button type="button" class="search-sub-navigation-items"></button>
           <ul class="sub-navigation-item visually-hidden">
             <li class="navigation-item">
               <a href="#">Виртуальная реальность</a>
@@ -52,17 +54,19 @@
           <a href="#">Квадрокоптеры</a>
         </li>
       </ul>
-      <li class="navigation-item">
-        <a href="#" class="navigation-button">Доставка</a>
-      </li>
-      <li class="navigation-item">
-        <a href="#" class="navigation-button">Гарантия</a>
-      </li>
-      <li class="navigation-item">
-        <a href="#" class="navigation-button">Контакты</a>
-      </li>
+      <ul>
+        <li class="navigation-item">
+          <a href="#" class="navigation-button">Доставка</a>
+        </li>
+        <li class="navigation-iteSm">
+          <a href="#" class="navigation-button">Гарантия</a>
+        </li>
+        <li class="navigation-item">
+          <a href="#" class="navigation-button">Контакты</a>
+        </li>
+      </ul class="sub-navigation-items">
     </nav>
-    <img src="#" alt="01">
+    <img src="#" alt="01" class="header-background-image">
     </header>
   <main class="main-content">
     <section class="gallery">
@@ -70,7 +74,7 @@
         <button type="button" class="slider-button-previous">
           <span class="visually-hidden">Предыдушее фото</span>
         </button>
-        <img src="" alt="Фото товаров" class="slider-image">
+        <img src="#" alt="Фото товаров" class="slider-image">
         <button type="button" class="slider-button-next">
           <span class="visually-hidden">Следуюшее фото</span>
         </button>
@@ -114,26 +118,26 @@
     </section>
     <section>
       <div class="information-list">
-        <ul>
+        <ul class="information-items">
           <li><button class="information-item">Доставка</button></li>
           <li><button class="information-item">Гарантия</button></li>
           <li><button class="information-item">Кредит</button></li>
         </ul>
         <section class="delivery-information">
-          <h2>Доставка</h2>
+          <h2 class="shipping">Доставка</h2>
           <p>Мы с удовольствием доставим ваш товар прямо
             к вашему подъезду совершенно бесплатно! Ведь
             мы неплохо заработаем, поднимая его на ваш этаж.</p>
         </section>
       </div>
     </section>
-    <section>
-      <img src="#" class="delivery-car">
-      <h4>Доставим редкий товар под заказ</h4>
+    <section class="about-shipping">
+      <img src="#" alt="delivery-car" class="delivery-car">
+      <h4 class="rare-items-shipping">Доставим редкий товар под заказ</h4>
      </section>
-     <section>
+     <section class="additional-info">
       <div class="about-us">
-        <h2>O нас</h2>
+        <h2 class="about">O нас</h2>
         <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
         Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
         <ul>
@@ -146,13 +150,13 @@
     </section>
     <section>
       <div class="contacts">
-        <h2>Контакты</h2>
+        <h2 class="contact">Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис.
           Заодно сможете проверить работоспособность покупки. </p>
           <h3 class="contacts-subtitle">Интернет-магазин «Девайс»</h3>
           <address class="contacts-address">
             <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-            <a class="contacts-phone" href="tel:+7 (812) 812-12-12">+7 (812) 812-12-12</a>
+            <a class="contacts-phone" href="tel:+78128121212">(812) 812-12-12</a>
           </address>
           <h3 class="contacts-subtitle">Время работы</h3>
           <ul>
@@ -163,8 +167,8 @@
       </div>
     </section>
     <section>
-      <h2>Подпишитесь на рассылку</h2>
-      <p>Еженедельный дайджест c обзорами новинок,длительными тест-драйвами, распаковками, a также акции, спецпредложения и вот это вот всё.</p>
+      <h2 class="subscribe-on-link">Подпишитесь на рассылку</h2>
+      <p class="">Еженедельный дайджест c обзорами новинок,длительными тест-драйвами, распаковками, a также акции, спецпредложения и вот это вот всё.</p>
     <input type="text" class="e-mail" name="Ваш e-mail">
     <button type="submit" name="Подписаться" class="subscribe-button">Подписаться</button>
     <input type="checkbox" checked>Это бесплатно
@@ -173,11 +177,11 @@
 
   <footer>
     <h2 class="site-name">device</h2>
-    <p>Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+    <p class="address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
     <a href="#" class="shipping">Доставка</a>
     <a href="#" class="guarantee">Гарантия</a>
     <a href="#" class="contacts">Контакты</a>
-    <a href="Тел.: +7 (812) 812-12-12" class="contacts-phone">Тел.: +7 (812) 812-12-12</a>
+    <a href="tel:+78128121212" class="contacts-phone">(812) 812-12-12</a>
     <ul class="social-list">
       <li class="social-item"><a href="https://t.me/htmlacademy">Telegram</a></li>
       <li class="social-item"><a href="https://www.youtube.com/user/htmlacademyru">YouTube</a></li>
