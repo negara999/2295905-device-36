@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
+    <a href="catalog.html"></a>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap">
   </head>
   <body>
     <header class="page-header">
@@ -82,9 +84,9 @@
         <div class="gallery-info">
           <h2 class="image-info">Порхает как бабочка,жалит как пчела!</h2>
             <p class="image-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-          <h5 class="more-info">Подробнее</h5>
-          <p>800 м <br><span>Дальность полета</span></p>
-          <p>50 м <br><span>Радиус поражения</span></p>
+          <button class="more-info">Подробнее</button>
+          <p class="flight-distance">800 м <br><span class="distance">Дальность полета</span></p>
+          <p class="radius">50 м <br><span class="flight-radius">Радиус поражения</span></p>
         </div>
         <ol class="slider-pagination">
           <li class="slider-pagination-item">
@@ -107,7 +109,7 @@
     </section>
     <section>
       <div class="items-photos">
-        <ul>
+        <ul class="site-products">
       <li><img src="images/vr-glasses.svg" alt="Виртуальная реальность" class="item-photo" width="97" height="55"></li>Виртуальная реальность
       <li><img src="images/monopod.svg" alt="Моноподы для селфи" class="item-photo" width="87" height="117"></li>Моноподы для селфи
       <li><img src="images/action-cam.svg" alt="Экшн-камеры" class="item-photo" width="72" height="87"></li>Экшн-камеры
@@ -120,13 +122,13 @@
     <section>
       <div class="information-list">
         <ul class="information-items">
-          <li><button class="information-item">Доставка</button></li>
-          <li><button class="information-item">Гарантия</button></li>
-          <li><button class="information-item">Кредит</button></li>
+          <li><button class="information-item-shipping">Доставка</button></li>
+          <li><button class="information-item-guarantee">Гарантия</button></li>
+          <li><button class="information-item-credit">Кредит</button></li>
         </ul>
         <section class="delivery-information">
           <h2 class="shipping">Доставка</h2>
-          <p>Мы с удовольствием доставим ваш товар прямо
+          <p class="info-shipping">Мы с удовольствием доставим ваш товар прямо
             к вашему подъезду совершенно бесплатно! Ведь
             мы неплохо заработаем, поднимая его на ваш этаж.</p>
            <img src="images/delivery-man.svg" alt="delivery-man" width="136" height="165">
@@ -140,9 +142,9 @@
      <section class="additional-info">
       <div class="about-us">
         <h2 class="about">O нас</h2>
-        <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
+        <p class="info-about-us">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.<br>
         Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
-        <ul>
+        <ul class="others">
           <li><b>Меловые линии</b></li>
           <li><b>СДИК</b></li>
           <li><b>ТоксБерри</b></li>
@@ -153,7 +155,7 @@
     <section>
       <div class="contacts">
         <h2 class="contact">Контакты</h2>
-        <p>Вы можете забрать товар сами, заехав в наш офис.
+        <p class="contact-information">Вы можете забрать товар сами, заехав в наш офис.
           Заодно сможете проверить работоспособность покупки. </p>
           <h3 class="contacts-subtitle">Интернет-магазин «Девайс»</h3>
           <address class="contacts-address">
@@ -170,20 +172,20 @@
     </section>
     <section>
       <h2 class="subscribe-on-link">Подпишитесь на рассылку</h2>
-      <p class="new-week-news">Еженедельный дайджест c обзорами новинок,длительными тест-драйвами, распаковками, a также акции, спецпредложения и вот это вот всё.</p>
-    <input type="text" class="e-mail" name="Ваш e-mail">
+      <p class="new-week-news">Еженедельный дайджест c обзорами новинок,<br>длительными тест-драйвами, распаковками, a также акции,<br> спецпредложения и вот это вот всё.</p>
+    <input type="text" class="e-mail" placeholder="Ваш e-mail">
     <button type="submit" name="Подписаться" class="subscribe-button">Подписаться</button>
-    <img src="images/verify-button.svg" alt="verify-button" width="15" height="14"> Это бесплатно
+    <img src="images/verify-button.svg" alt="verify-button" width="15" height="14"> <span class="free">Это бесплатно</span>
     </section>
   </main>
 
   <footer>
     <img src="images/name-site-for-footer.svg" alt="site-name" width="145" height="36">
     <p class="address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-    <a href="#" class="shipping">Доставка</a>
-    <a href="#" class="guarantee">Гарантия</a>
-    <a href="#" class="contacts">Контакты</a>
-    <a href="tel:+78128121212" class="contacts-phone">(812) 812-12-12</a>
+    <a href="#" class="shipping-footer">Доставка</a>
+    <a href="#" class="guarantee-footer">Гарантия</a>
+    <a href="#" class="contacts-footer">Контакты</a>
+    <a href="tel:+78128121212" class="contacts-phone-footer">(812) 812-12-12</a>
     <ul class="social-list">
       <li class="social-item"><a href="https://t.me/htmlacademy"><img src="images/telegram-logo.svg" alt="telegram-logo" width="14" height="12"></a></li>
       <li class="social-item"><a href="https://www.youtube.com/user/htmlacademyru"><img src="images/youtube-logo.svg" alt="youtube-logo" width="16" height="11"></a></li>
