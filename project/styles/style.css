@@ -351,3 +351,14 @@ ul li::before {
   line-height: 21.1px;
   color: #000000;
 }
+
+.navigation-item,
+.navigation-list,
+.site-products,
+.information-items,
+.others,
+.contacts-schedule-item,
+.social-item,
+.page-selection {
+  list-style: none;
+}
