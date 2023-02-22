@@ -8,7 +8,7 @@
   </head>
   <body>
     <header class="page-header container">
-      <img src="images/logo.svg" alt="site-name" width="145" height="36">
+      <img src="images/logo.svg" alt="site-name" width="145" height="36" class="logo-image">
       <nav class="navigation">
         <div class="header-container">
         <div class="page-header__search-box">
@@ -52,8 +52,8 @@
         </li>
       </ul>
       </div>
-      <div class="sub-catalog-items">
-        <ul class="catalog__sub-navigation-items visually-hidden reset-list">
+      <div class="sub-catalog-items visually-hidden">
+        <ul class="catalog__sub-navigation-items reset-link reset-list">
               <li class="catalog__navigation-item">
                 <a href="#">Виртуальная реальность</a>
               </li>
@@ -74,23 +74,23 @@
           </li>
         </ul>
         </div>
-    <img src="#" alt="01" class="header-background-image">
+    <span class="header-background-image">01</span>
     </header>
   <main class="main-content">
     <section class="gallery container">
       <div class="page-gallery-slides">
         <div class="main__page-container">
-        <button type="button" class="page-slider-button-previous">
+        <button type="button" class="page-slider-button-previous pagination-button">
           <img src="images/arrow-1.svg" alt="arrow-button" width="20" height="60">
-          <span class="visually-hidden">Предыдушее фото</span>
+          <span class="reset-link visually-hidden">Предыдушее фото</span>
         </button>
         <img src="images/slider-1.png" alt="Фото товаров" class="page-slider-image" width="200" height="200">
-        <button type="button" class="page-slider-button-next">
+        <button type="button" class="page-slider-button-next pagination-button">
           <img src="images/arrow-2.svg" alt="arrow-button" width="20" height="60">
-          <span class="visually-hidden">Следуюшее фото</span>
+          <span class="reset-link visually-hidden">Следуюшее фото</span>
         </button>
         <div class="gallery-info">
-          <h2 class="slider-image-info section-font">Порхает как бабочка,жалит как пчела!</h2>
+          <h2 class="slider-image-info section-font">Порхает как бабочка, жалит как пчела!</h2>
             <p class="slider-subtitle-information gray-color">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
           <button class="slider-image-more-info">Подробнее</button>
           <div class="distance-radius-info">
@@ -140,11 +140,15 @@
        </div>
         <div class="delivery-information container">
         <section>
+          <div class="shipping-info-and-image">
+          <div class="shipping-information-wrapper">
           <h2 class="shipping section-font">Доставка</h2>
           <p class="shipping-subtitle-information gray-color">Мы с удовольствием доставим ваш товар прямо
             к вашему подъезду совершенно бесплатно! Ведь
             мы неплохо заработаем, поднимая его на ваш этаж.</p>
-           <img src="images/delivery-man.svg" alt="delivery-man" width="136" height="165">
+          </div>
+           <img src="images/delivery-man.svg" alt="delivery-man" width="136" height="165" class="delivery-man">
+        </div>
         </section>
       </div>
     </section>
@@ -155,8 +159,8 @@
      <div class="additional-info container">
      <section>
         <h2 class="about-us__main section-font">O нас</h2>
-        <p class="about-us__main-subtitle-information">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.<br>
-        Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
+        <p class="about-us__main-subtitle-information">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+        <p class="about-us__second-paragraph">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
         <ul class="about-us__features">
           <li><b>Меловые линии</b></li>
           <li><b>СДИК</b></li>
@@ -211,6 +215,7 @@
     <a href="tel:+78128121212" class="contacts-phone-footer">Тел.: +7 (812) 812-12-12</a>
     </section>
     <div class="footer-social-links">
+      <span class="decor-footer"></span>
     <ul class="footer__social-list reset-list">
       <li class="footer__social-item"><a href="https://t.me/htmlacademy"><img src="images/telegram-logo.svg" alt="telegram-logo"></a></li>
       <li class="footer__social-item"><a href="https://www.youtube.com/user/htmlacademyru"><img src="images/youtube-logo.svg" alt="youtube-logo"></a></li>
