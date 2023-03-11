@@ -1,223 +1,373 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>HTML Academy: Девайс</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
     <header class="page-header container">
       <a href="/" class="header-logo">
-      <img src="images/logo.svg" alt="site-name" width="145" height="36">
-    </a>
+        <img
+          src="images/logo.svg"
+          alt="site-name"
+          width="145"
+          height="36"
+          class="logo-image"
+        />
+      </a>
       <nav class="navigation">
         <div class="header-container">
-        <div class="page-header__search-box">
-          <img src="images/search.svg"  alt="search-icon" class="page-header__search-icon"  width="16" height="16">
-          <label>
-          <input type="search" placeholder="Текст поиска" class="page-header__search-text">
-        </label>
-          <button type="button" class="page-header__search-button">Найти</button>
+          <div class="page-header__search-box">
+            <img
+              src="images/search.svg"
+              alt="search-icon"
+              class="page-header__search-icon"
+              width="16"
+              height="16"
+            />
+            <label class="search-box-label">
+              <input
+                type="search"
+                placeholder="Текст поиска"
+                class="page-header__search-text"
+              />
+            </label>
+            <button type="button" class="page-header__search-button">
+              Найти
+            </button>
           </div>
           <div class="heading-items">
             <ul class="navigation-items-header reset-list">
               <li class="navigation-item">
-                <a href="#" class="navigation-user navigation-item__user"><img src="images/login.svg" alt="search-icon" class="search-icon" width="15" height="12"><span>Коля Петухов</span></a>
+                <a href="#" class="navigation-user navigation-item__user"
+                  ><img
+                    src="images/login.svg"
+                    alt="search-icon"
+                    class="search-icon"
+                    width="15"
+                    height="12"
+                  /><span class="header-navigation">Коля Петухов</span></a
+                >
               </li>
               <li class="navigation-item reset-link">
-                <a href="#" class="navigation-logout gray-color reset-link"><span>Выйти</span></a>
+                <a href="#" class="navigation-logout gray-color reset-link"
+                  ><span class="header-navigation">Выйти</span></a
+                >
               </li>
               <li class="navigation-item">
-              <a href="#" class="navigation-compare"><img src="images/diagram.svg" alt="search-icon" class="search-icon" width="10" height="12"><span>Сравнить</span></a>
+                <a href="#" class="navigation-compare"
+                  ><img
+                    src="images/diagram.svg"
+                    alt="search-icon"
+                    class="search-icon"
+                    width="10"
+                    height="12"
+                  /><span class="header-navigation">Сравнить</span></a
+                >
               </li>
               <li class="navigation-item">
-                <a href="#" class="navigation-shopping-cart"><img src="images/cart.svg" alt="search-icon" class="search-icon" width="16" height="14"><span>Корзина</span></a>
+                <a href="#" class="navigation-shopping-cart"
+                  ><img
+                    src="images/cart.svg"
+                    alt="search-icon"
+                    class="search-icon"
+                    width="16"
+                    height="14"
+                  /><span class="header-navigation">Корзина</span></a
+                >
               </li>
             </ul>
-            </div>
-            </div>
-            </nav>
-            <div class="header__navigation-items container">
-            <ul class="main__navigation reset-list">
-              <li class="main__navigation-item">
-                <a href="#" class="main-navigatio-link">
-                <h3 class="main__navigation-button section-font">Каталог товаров</h3>
-              </a>
-                <button type="button" class="catalog__search-sub-navigation-items"><img src="images/ellipse-2.svg" alt="catalog-button" width="50" height="50"></button>
-              </li>
-            </ul>
-            <ul class="navigation-items reset-list">
-              <li class="main__navigation-item">
-                <a href="#" class="main__navigation-button-shipping">Доставка</a>
-              </li>
-              <li class="navigation-item">
-                <a href="#" class="main__navigation-button-guarantee">Гарантия</a>
-              </li>
-              <li class="navigation-item">
-                <a href="#" class="main__navigation-button-contacts">Контакты</a>
-              </li>
-            </ul>
-            </div>
-            <div class="sub-catalog-items visually-hidden">
-              <ul class="catalog__sub-navigation-items reset-link reset-list">
-                    <li class="catalog__navigation-item">
-                      <a href="#">Виртуальная реальность</a>
-                    </li>
-                <li class="catalog__sub-navigation-item">
-                  <a href="#">Моноподы для ceлфи</a>
-                </li>
-                <li class="catalog__sub-navigation-item">
-                  <a href="#">Экшн-камеры</a>
-                </li>
-                <li class="catalog__sub-navigation-item">
-                  <a href="#">Фитнес-браслеты</a>
-                </li>
-                <li class="catalog__sub-navigation-item">
-                  <a href="#">Умные часы</a>
-                </li>
-                <li class="catalog__sub-navigation-item">
-                  <a href="#">Квадрокоптеры</a>
-                </li>
-              </ul>
-              </div>
+          </div>
+        </div>
+      </nav>
+      <div class="header__navigation-items container">
+        <ul class="main__navigation reset-list">
+          <li class="main__navigation-item">
+            <a href="#" class="main-navigatio-link">
+              <h3 class="main__navigation-button section-font">
+                Каталог товаров
+              </h3>
+            </a>
+            <button type="button" class="catalog__search-sub-navigation-items">
+              <img
+                src="images/ellipse-2.svg"
+                alt="catalog-button"
+                width="50"
+                height="50"
+              />
+            </button>
+          </li>
+        </ul>
+        <ul class="navigation-items reset-list">
+          <li class="main__navigation-item">
+            <a
+              href="#"
+              class="main__navigation-button-shipping navigation-buttons"
+              >Доставка</a
+            >
+          </li>
+          <li class="navigation-item">
+            <a
+              href="#"
+              class="main__navigation-button-guarantee navigation-buttons"
+              >Гарантия</a
+            >
+          </li>
+          <li class="navigation-item">
+            <a
+              href="#"
+              class="main__navigation-button-contacts navigation-buttons"
+              >Контакты</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="sub-catalog-items visually-hidden">
+        <ul class="catalog__sub-navigation-items reset-link reset-list">
+          <li class="catalog__navigation-item">
+            <a href="#">Виртуальная реальность</a>
+          </li>
+          <li class="catalog__sub-navigation-item">
+            <a href="#">Моноподы для ceлфи</a>
+          </li>
+          <li class="catalog__sub-navigation-item">
+            <a href="#">Экшн-камеры</a>
+          </li>
+          <li class="catalog__sub-navigation-item">
+            <a href="#">Фитнес-браслеты</a>
+          </li>
+          <li class="catalog__sub-navigation-item">
+            <a href="#">Умные часы</a>
+          </li>
+          <li class="catalog__sub-navigation-item">
+            <a href="#">Квадрокоптеры</a>
+          </li>
+        </ul>
+      </div>
     </header>
     <main class="main-page container">
       <h2 class="main__page-title section-font">Моноподы для селфи</h2>
       <div class="main-page-selection">
-      <p class="main">Главная</p>
-      <p class="products-catalog">Каталог товаров</p>
-      <p class="main-page-product">Моноподы для селфи</p>
-    </div>
-    <div class="catalog-page-wrapper">
-    <div class="products-specifics">
-      <section><h4 class="filter">Фильтр:</h4></section>
-      <section><h4 class="sorting">Сортировка:</h4></section>
-      <div class="popular-products">
-        <h3 class="popular section-font">Популярные</h3>
-        <button><img src="images/arrow-down.svg" alt="arrow-button" width="10" height="7"></button>
+        <p class="main">Главная</p>
+        <p class="products-catalog">Каталог товаров</p>
+        <p class="main-page-product">Моноподы для селфи</p>
       </div>
-      <div class="page-arrows">
-      <img src="images/arrow-up.svg" alt="arrow-button" width="12" height="10">
-      <img src="images/arrow-down-near-up.svg" alt="arrow-button" width="12" height="10">
-    </div>
-    </div>
-    <div class="catalog-wrapper">
-      <div class="product-properties">
-      <h4 class="costing">Стоимость</h4>
-      <label>
-      <sub>от 0</sub><input type="range"><sub>до 5000</sub>
-    </label>
-    <section>
-      <div class="choose-product-color">
-      <h4 class="product-color">Цвет</h4>
-      <label>
-        <input type="checkbox" class="black-color" checked>
-        Черный
-      </label>
-      <label>
-      <input type="checkbox" class="white-color" checked>
-      Белый
-      </label>
-      <label><input type="checkbox" class="blue-color">
-        Синий
-      </label>
-      <label><input type="checkbox" class="red-color">
-        Красный
-      </label>
-      <label><input type="checkbox" class="pink-color">
-        Розовый
-      </label>
-      </div>
-    </section>
-    <section class="bluetooth-checking">
-      <h4 class="bluetooth">Bluetooth</h4>
-      <div class="bluetooth-support">
-      <label>
-      <input type="radio" class="bluetooth-on" checked>
-      Есть
-      </label>
-      <label>
-      <input type="radio" class="bluetooth-off">Нет
-    </label>
-   </div>
-   <a href="#" class="show-more">Показать</a>
-   </section>
-  </div>
-  <div class="catalog-info">
-    <div class="selfie-sticks">
-    <section class="catalog-products-wrapper">
-      <div class="amateur-selfie-stick catalog-products-items">
-      <img src="images/amateur-selfie-stick.png" alt="selfie-stick" width="360" height="380">
-      <div class="info-image-wrapper">
-        <h5 class="selfie-stick">Любительская <br> селфи-палка</h5>
-        <h5 class="price">500 ₽</h5>
-      </div>
+      <div class="catalog-page-wrapper">
+        <div class="products-specifics">
+          <section><h4 class="filter">Фильтр:</h4></section>
+          <section><h4 class="sorting">Сортировка:</h4></section>
+          <div class="popular-products">
+            <h3 class="popular section-font">Популярные</h3>
+            <button>
+              <img
+                src="images/arrow-down.svg"
+                alt="arrow-button"
+                width="10"
+                height="7"
+              />
+            </button>
+          </div>
+          <div class="page-arrows">
+            <img
+              src="images/arrow-up.svg"
+              alt="arrow-button"
+              width="12"
+              height="10"
+            />
+            <img
+              src="images/arrow-down-near-up.svg"
+              alt="arrow-button"
+              width="12"
+              height="10"
+            />
+          </div>
         </div>
-        <div class="professional-selfie-stick catalog-products-items">
-      <img src="images/professional-selfie-stick.png" alt="selfie-stick" class="professional-selfie-stick" width="360" height="380">
-      <div class="info-image-wrapper">
-        <h5 class="selfie-stick">Профессиональная <br> селфи-палка </h5>
-        <h5 class="price">1 500 ₽</h5>
-      </div>
+        <div class="catalog-wrapper">
+          <div class="product-properties">
+            <h4 class="costing">Стоимость</h4>
+            <label>
+              <sub>от 0</sub><input type="range" /><sub>до 5000</sub>
+            </label>
+            <section>
+              <div class="choose-product-color">
+                <h4 class="product-color">Цвет</h4>
+                <label>
+                  <input type="checkbox" class="black-color" checked />
+                  Черный
+                </label>
+                <label>
+                  <input type="checkbox" class="white-color" checked />
+                  Белый
+                </label>
+                <label
+                  ><input type="checkbox" class="blue-color" />
+                  Синий
+                </label>
+                <label
+                  ><input type="checkbox" class="red-color" />
+                  Красный
+                </label>
+                <label
+                  ><input type="checkbox" class="pink-color" />
+                  Розовый
+                </label>
+              </div>
+            </section>
+            <section class="bluetooth-checking">
+              <h4 class="bluetooth">Bluetooth</h4>
+              <div class="bluetooth-support">
+                <label>
+                  <input type="radio" class="bluetooth-on" checked />
+                  Есть
+                </label>
+                <label> <input type="radio" class="bluetooth-off" />Нет </label>
+              </div>
+              <a href="#" class="show-more">Показать</a>
+            </section>
+          </div>
+          <div class="catalog-info">
+            <div class="selfie-sticks">
+              <section class="catalog-products-wrapper">
+                <div class="amateur-selfie-stick catalog-products-items">
+                  <img
+                    src="images/amateur-selfie-stick.png"
+                    alt="selfie-stick"
+                    width="360"
+                    height="380"
+                  />
+                  <div class="info-image-wrapper">
+                    <h5 class="selfie-stick">
+                      Любительская <br />
+                      селфи-палка
+                    </h5>
+                    <h5 class="price">500 ₽</h5>
+                  </div>
+                </div>
+                <div class="professional-selfie-stick catalog-products-items">
+                  <img
+                    src="images/professional-selfie-stick.png"
+                    alt="selfie-stick"
+                    class="professional-selfie-stick"
+                    width="360"
+                    height="380"
+                  />
+                  <div class="info-image-wrapper">
+                    <h5 class="selfie-stick">
+                      Профессиональная <br />
+                      селфи-палка
+                    </h5>
+                    <h5 class="price">1 500 ₽</h5>
+                  </div>
+                </div>
+                <div class="waterproof-selfie-stick catalog-products-items">
+                  <img
+                    src="images/waterproof-selfie-stick.png"
+                    alt="selfie-stick"
+                    width="360"
+                    height="380"
+                  />
+                  <div class="info-image-wrapper">
+                    <h5 class="selfie-stick">
+                      Непотопляемая <br />
+                      селфи-палка
+                    </h5>
+                    <h5 class="price">2 500 ₽</h5>
+                  </div>
+                </div>
+                <div class="carry-with-selfie-stick catalog-products-items">
+                  <img
+                    src="images/carry-with-selfie-stick.png"
+                    alt="selfie-stick"
+                    width="360"
+                    height="380"
+                  />
+                  <div class="info-image-wrapper">
+                    <h5 class="selfie-stick">
+                      Селфи-палка <br />
+                      «Следуй за мной»
+                    </h5>
+                    <h5 class="price">1 500 ₽</h5>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <div class="more-products-wrapper">
+              <a href="#" class="more-products">Загрузить ещё</a>
+            </div>
+            <ul class="reset-list page-selection">
+              <li><a href="#" class="turn-back-page">Назад</a></li>
+              <li>
+                <ul class="pagination-numbers reset-list">
+                  <li class="pagination-selector">
+                    <a href="#" class="first-page page-selector">1</a>
+                  </li>
+                  <li class="pagination-selector">
+                    <a href="#" class="second-page page-selector">2</a>
+                  </li>
+                  <li class="pagination-selector">
+                    <a href="#" class="third-page page-selector">3</a>
+                  </li>
+                  <li class="pagination-selector">
+                    <a href="#" class="other-pages page-selector">...</a>
+                  </li>
+                  <li class="pagination-selector">
+                    <a href="#" class="last-page page-selector">15</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li><a href="#" class="turn-next-page">Вперёд</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="waterproof-selfie-stick catalog-products-items">
-      <img src="images/waterproof-selfie-stick.png" alt="selfie-stick" width="360" height="380">
-      <div class="info-image-wrapper">
-        <h5 class="selfie-stick">Непотопляемая <br> селфи-палка</h5>
-        <h5 class="price">2 500 ₽</h5>
-        </div>
-        </div>
-        <div class="carry-with-selfie-stick catalog-products-items">
-      <img src="images/carry-with-selfie-stick.png" alt="selfie-stick" width="360" height="380">
-      <div class="info-image-wrapper">
-      <h5 class="selfie-stick">Селфи-палка <br> «Следуй за мной»</h5>
-      <h5 class="price">1 500 ₽</h5>
-    </div>
       </div>
-      </section>
-      </div>
-    <div class="more-products-wrapper">
-      <a href="#" class="more-products">Загрузить ещё</a>
-    </div>
-     <ul class="reset-list page-selection">
-        <li><a href="#" class="turn-back-page">Назад</a></li>
-        <li>
-          <ul class="pagination-numbers reset-list">
-            <li class="pagination-selector"><a href="#" class="first-page page-selector">1</a></li>
-            <li class="pagination-selector"><a href="#" class="second-page page-selector">2</a></li>
-            <li class="pagination-selector"><a href="#" class="third-page page-selector">3</a></li>
-            <li class="pagination-selector"><a href="#" class="other-pages page-selector">...</a></li>
-            <li class="pagination-selector"><a href="#" class="last-page page-selector">15</a></li>
-          </ul>
-        <li><a href="#" class="turn-next-page">Вперёд</a></li>
-      </ul>
-      </div>
-    </div>
-    </div>
     </main>
-    <footer class="page-footer ">
+    <footer class="page-footer">
       <div class="container">
-      <img src="images/name-site-for-footer.svg" alt="site-name" width="145" height="36">
-      <section class="footer__information">
-      <p class="footer__address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-      <ul class="footer__social-items reset-list">
-        <li><a href="#" class="shipping-footer">Доставка</a></li>
-        <li><a href="#" class="guarantee-footer">Гарантия</a></li>
-        <li> <a href="#" class="contacts-footer">Контакты</a></li>
-      </ul>
-      <a href="tel:+78128121212" class="contacts-phone-footer">Тел.: +7 (812) 812-12-12</a>
-      </section>
-      <div class="footer-social-links">
-        <span class="decor-footer"></span>
-      <ul class="footer__social-list reset-list">
-        <li class="footer__social-item"><a href="https://t.me/htmlacademy"><img src="images/telegram-logo.svg" alt="telegram-logo"></a></li>
-        <li class="footer__social-item"><a href="https://www.youtube.com/user/htmlacademyru"><img src="images/youtube-logo.svg" alt="youtube-logo"></a></li>
-        <li class="footer__social-item"><a href="https://twitter.com/htmlacademy_ru"><img src="images/twitter-logo.svg" alt="twitter-logo"></a></li>
-      </ul>
-      <a href="https://htmlacademy.ru/"><img src="images/academy-name.svg" alt="academy-name"></a>
-      </div>
+        <img
+          src="images/name-site-for-footer.svg"
+          alt="site-name"
+          width="145"
+          height="36"
+        />
+        <section class="footer__information">
+          <p class="footer__address">
+            Санкт-Петербург, набережная реки Карповки, 5, литера П.
+          </p>
+          <ul class="footer__social-items reset-list">
+            <li><a href="#" class="shipping-footer">Доставка</a></li>
+            <li><a href="#" class="guarantee-footer">Гарантия</a></li>
+            <li><a href="#" class="contacts-footer">Контакты</a></li>
+          </ul>
+          <a href="tel:+78128121212" class="contacts-phone-footer"
+            >Тел.: +7 (812) 812-12-12</a
+          >
+        </section>
+        <div class="footer-social-links">
+          <span class="decor-footer"></span>
+          <ul class="footer__social-list reset-list">
+            <li class="footer__social-item">
+              <a href="https://t.me/htmlacademy"
+                ><img src="images/telegram-logo.svg" alt="telegram-logo"
+              /></a>
+            </li>
+            <li class="footer__social-item">
+              <a href="https://www.youtube.com/user/htmlacademyru"
+                ><img src="images/youtube-logo.svg" alt="youtube-logo"
+              /></a>
+            </li>
+            <li class="footer__social-item">
+              <a href="https://twitter.com/htmlacademy_ru"
+                ><img src="images/twitter-logo.svg" alt="twitter-logo"
+              /></a>
+            </li>
+          </ul>
+          <a href="https://htmlacademy.ru/"
+            ><img src="images/academy-name.svg" alt="academy-name"
+          /></a>
+        </div>
       </div>
     </footer>
-
-    </body>
-  </html>
+  </body>
+</html>

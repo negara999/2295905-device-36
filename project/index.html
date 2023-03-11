@@ -19,14 +19,14 @@
       <nav class="navigation">
         <div class="header-container">
           <div class="page-header__search-box">
-            <img
-              src="images/search.svg"
-              alt="search-icon"
-              class="page-header__search-icon"
-              width="16"
-              height="16"
-            />
-            <label>
+            <label class="search-box-label">
+              <img
+                src="images/search.svg"
+                alt="search-icon"
+                class="page-header__search-icon"
+                width="16"
+                height="16"
+              />
               <input
                 type="search"
                 placeholder="Поиск по сайту"
@@ -47,7 +47,7 @@
                     class="search-icon"
                     width="15"
                     height="12"
-                  /><span>Войти</span></a
+                  /><span class="navigation-items-page-header">Войти</span></a
                 >
               </li>
               <li class="navigation-item">
@@ -58,10 +58,12 @@
                     class="search-icon"
                     width="10"
                     height="12"
-                  /><span>Сравнить</span></a
+                  /><span class="navigation-items-page-header"
+                    >Сравнить</span
+                  ></a
                 >
               </li>
-              <li class="navigation-item">
+              <li class="navigation-item navigation-item-cart">
                 <a href="#" class="navigation-shopping-cart"
                   ><img
                     src="images/cart.svg"
@@ -69,18 +71,80 @@
                     class="search-icon"
                     width="16"
                     height="14"
-                  /><span>Корзина</span></a
+                  /><span class="navigation-items-page-header">Корзина</span></a
                 >
+                <div class="popover popover-cart">
+                  <div class="popover-content">
+                    <ul class="cart-items-list">
+                      <li class="cart-item">
+                        <img
+                          src="images/amateur-selfie-stick.png"
+                          alt="selfie-stick"
+                          width="39"
+                          height="43"
+                        />
+                        <p class="cart-item-title">Любительская селфи-палка</p>
+                        <button type="button" class="cart-item-button remove-item-button">
+                          <svg
+                            width="10"
+                            height="11"
+                            viewBox="0 0 10 11"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10 1.07584L9.09091 0.166748L5 4.25766L0.909091 0.166748L0 1.07584L4.09091 5.16675L0 9.25766L0.909091 10.1667L5 6.07584L9.09091 10.1667L10 9.25766L5.90909 5.16675L10 1.07584Z"
+                              fill="white"
+                            />
+                          </svg>
+                          <span class="visually-hidden">Удалить из корзины</span>
+                        </button>
+                      </li>
+                      <li class="cart-item">
+                        <img
+                          src="images/professional-selfie-stick.png"
+                          alt="selfie-stick"
+                          class="professional-selfie-stick"
+                          width="39"
+                          height="43"
+                        />
+                        <p class="cart-item-title">Профессиональная селфи-палка</p>
+                        <button type="button" class="cart-item-button remove-item-button">
+                          <svg
+                            width="10"
+                            height="11"
+                            viewBox="0 0 10 11"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10 1.07584L9.09091 0.166748L5 4.25766L0.909091 0.166748L0 1.07584L4.09091 5.16675L0 9.25766L0.909091 10.1667L5 6.07584L9.09091 10.1667L10 9.25766L5.90909 5.16675L10 1.07584Z"
+                              fill="white"
+                            />
+                          </svg>
+                          <span class="visually-hidden">Удалить из корзины</span>
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="popover-cart-quantity">
+                    <p>Товаров: 2</p>
+                    <p>Сумма: 2000 ₽</p>
+                  </div>
+                  <a class="open-cart">Открыть корзину</a>
+                </div>
+              </div>
               </li>
             </ul>
-          </div>
         </div>
       </nav>
       <div class="header__navigation-items container">
         <ul class="main__navigation reset-list">
           <li class="main__navigation-item">
             <a href="catalog.html" class="main-navogation-link">
-              <h3 class="main__navigation-button section-font">
+              <h3
+                class="main__navigation-button section-font navigation-buttons"
+              >
                 Каталог товаров
               </h3>
             </a>
@@ -96,13 +160,25 @@
         </ul>
         <ul class="navigation-items reset-list">
           <li class="main__navigation-item">
-            <a href="#" class="main__navigation-button-shipping">Доставка</a>
+            <a
+              href="#"
+              class="main__navigation-button-shipping navigation-buttons"
+              >Доставка</a
+            >
           </li>
           <li class="navigation-item">
-            <a href="#" class="main__navigation-button-guarantee">Гарантия</a>
+            <a
+              href="#"
+              class="main__navigation-button-guarantee navigation-buttons"
+              >Гарантия</a
+            >
           </li>
           <li class="navigation-item">
-            <a href="#" class="main__navigation-button-contacts">Контакты</a>
+            <a
+              href="#"
+              class="main__navigation-button-contacts navigation-buttons"
+              >Контакты</a
+            >
           </li>
         </ul>
       </div>
@@ -245,7 +321,7 @@
                     height="55"
                   />
                 </div>
-                <p>Виртуальная реальность</p></a
+                <p class="products-link">Виртуальная реальность</p></a
               >
             </li>
             <li class="site-product">
@@ -259,7 +335,7 @@
                     height="117"
                   />
                 </div>
-                <p>Моноподы для селфи</p></a
+                <p class="products-link">Моноподы для селфи</p></a
               >
             </li>
             <li class="site-product">
@@ -273,7 +349,7 @@
                     height="87"
                   />
                 </div>
-                <p>Экшн-камеры</p></a
+                <p class="products-link">Экшн-камеры</p></a
               >
             </li>
             <li class="site-product">
@@ -287,7 +363,7 @@
                     height="66"
                   />
                 </div>
-                <p>Фитнес-браслеты</p></a
+                <p class="products-link">Фитнес-браслеты</p></a
               >
             </li>
             <li class="site-product">
@@ -301,7 +377,7 @@
                     height="98"
                   />
                 </div>
-                <p>Умные часы</p></a
+                <p class="products-link">Умные часы</p></a
               >
             </li>
             <li class="site-product">
@@ -315,7 +391,7 @@
                     height="70"
                   />
                 </div>
-                <p>Квадрокоптеры</p></a
+                <p class="products-link">Квадрокоптеры</p></a
               >
             </li>
           </ul>
@@ -329,10 +405,11 @@
               <button class="information-item-guarantee">Гарантия</button>
             </li>
             <li><button class="information-item-credit">Кредит</button></li>
+            <span class="decor-main"></span>
           </ul>
         </div>
         <div class="delivery-information container">
-          <section>
+          <section class="delivery-info-and-image">
             <div class="shipping-info-and-image">
               <div class="shipping-information-wrapper">
                 <h2 class="shipping section-font">Доставка</h2>
@@ -366,7 +443,8 @@
         <h4 class="rare-items-shipping">Доставим редкий товар под заказ</h4>
       </section>
       <div class="additional-info container">
-        <section>
+        <section class="main-page-style">
+          <span class="main-page-decor"></span>
           <h2 class="about-us__main section-font">O нас</h2>
           <p class="about-us__main-subtitle-information">
             Огромный выбор гаджетов не оставит равнодушным гика, который есть в
@@ -384,6 +462,7 @@
           <a href="#" class="main__more-about-us">Подробнее o нас</a>
         </section>
         <section>
+          <span class="main-page-decor"></span>
           <h2 class="main__contact section-font">Контакты</h2>
           <p class="main__contact-subtitle-information gray-color">
             Вы можете забрать товар сами, заехав в наш офис. Заодно сможете
@@ -412,19 +491,20 @@
           <a href="#" class="contact-us-button">Напишите нам</a>
         </section>
       </div>
-      <section class="subscribe container">
-        <section class="subscribe-info">
+      <section class="subscribe">
+        <div class="container">
+          <div class="subscribe-info">
           <h2 class="subscribe-on-link section-font">
             Подпишитесь на рассылку
           </h2>
           <p class="subscribe-on-link-information gray-color">
-            Еженедельный дайджест c обзорами новинок,длительными тест-драйвами,
-            распаковками, a также акции, спецпредложения и вот это вот всё.
+            Еженедельный дайджест c обзорами новинок,<br>длительными тест-драйвами,
+            распаковками, a также акции,<br> спецпредложения и вот это вот всё.
           </p>
-        </section>
-        <section class="footer__enter-e-mail">
+        </div>
+        <div class="footer__enter-e-mail">
           <div class="input-wrapper">
-            <label>
+            <label class="main-page-enter-email">
               <input type="text" class="e-mail" placeholder="Ваш e-mail" />
             </label>
             <button type="submit" name="Подписаться" class="subscribe-button">
@@ -440,7 +520,9 @@
             />
             <span class="free">Это бесплатно</span>
           </div>
-        </section>
+        </div>
+      </div>
+
       </section>
     </main>
 
