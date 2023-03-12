@@ -154,79 +154,74 @@
         <p class="main-page-product">Моноподы для селфи</p>
       </div>
       <div class="catalog-page-wrapper">
-        <div class="products-specifics">
-          <section><h4 class="filter">Фильтр:</h4></section>
-          <section><h4 class="sorting">Сортировка:</h4></section>
-          <div class="popular-products">
-            <h3 class="popular section-font">Популярные</h3>
-            <button>
-              <img
-                src="images/arrow-down.svg"
-                alt="arrow-button"
-                width="10"
-                height="7"
-              />
-            </button>
-          </div>
-          <div class="page-arrows">
-            <img
-              src="images/arrow-up.svg"
-              alt="arrow-button"
-              width="12"
-              height="10"
-            />
-            <img
-              src="images/arrow-down-near-up.svg"
-              alt="arrow-button"
-              width="12"
-              height="10"
-            />
-          </div>
+        <div class="product-properties">
+          <div><h4 class="filter">Фильтр:</h4></div>
+          <h4 class="pricing sidebar-filter-header">Стоимость</h4>
+          <label>
+            <sub>от 0</sub><input type="range" /><sub>до 5000</sub>
+          </label>
+          <section>
+            <div class="choose-product-color">
+              <h4 class="product-color sidebar-filter-header">Цвет</h4>
+              <label>
+                <input type="checkbox" class="black-color" checked />
+                Черный
+              </label>
+              <label>
+                <input type="checkbox" class="white-color" checked />
+                Белый
+              </label>
+              <label
+                ><input type="checkbox" class="blue-color" />
+                Синий
+              </label>
+              <label
+                ><input type="checkbox" class="red-color" />
+                Красный
+              </label>
+              <label class="checkbox-pink-color"
+                ><input type="checkbox" class="pink-color" />
+                Розовый
+              </label>
+            </div>
+          </section>
+          <section class="bluetooth-checking">
+            <h4 class="bluetooth sidebar-filter-header">Bluetooth</h4>
+            <div class="bluetooth-support">
+              <label>
+                <input type="radio" class="bluetooth-on" checked />
+                Есть
+              </label>
+              <label> <input type="radio" class="bluetooth-off" />Нет </label>
+            </div>
+            <a href="#" class="show-more">Показать</a>
+          </section>
         </div>
         <div class="catalog-wrapper">
-          <div class="product-properties">
-            <h4 class="costing">Стоимость</h4>
-            <label>
-              <sub>от 0</sub><input type="range" /><sub>до 5000</sub>
-            </label>
-            <section>
-              <div class="choose-product-color">
-                <h4 class="product-color">Цвет</h4>
-                <label>
-                  <input type="checkbox" class="black-color" checked />
-                  Черный
-                </label>
-                <label>
-                  <input type="checkbox" class="white-color" checked />
-                  Белый
-                </label>
-                <label
-                  ><input type="checkbox" class="blue-color" />
-                  Синий
-                </label>
-                <label
-                  ><input type="checkbox" class="red-color" />
-                  Красный
-                </label>
-                <label
-                  ><input type="checkbox" class="pink-color" />
-                  Розовый
-                </label>
-              </div>
-            </section>
-            <section class="bluetooth-checking">
-              <h4 class="bluetooth">Bluetooth</h4>
-              <div class="bluetooth-support">
-                <label>
-                  <input type="radio" class="bluetooth-on" checked />
-                  Есть
-                </label>
-                <label> <input type="radio" class="bluetooth-off" />Нет </label>
-              </div>
-              <a href="#" class="show-more">Показать</a>
-            </section>
-          </div>
           <div class="catalog-info">
+            <div class="products-specifics">
+              <div><h4 class="sorting">Сортировка:</h4></div>
+              <div class="popular-products">
+                <select class="sorting-options">
+                  <option>Популярные</option>
+                  <option>По алфавиту</option>
+                </select>
+              </div>
+              <div class="page-arrows">
+                <img
+                  src="images/arrow-up.svg"
+                  alt="arrow-button"
+                  width="12"
+                  height="10"
+                />
+                <img
+                  src="images/arrow-down-near-up.svg"
+                  alt="arrow-button"
+                  width="12"
+                  height="10"
+                />
+              </div>
+            </div>
             <div class="selfie-sticks">
               <section class="catalog-products-wrapper">
                 <div class="amateur-selfie-stick catalog-products-items">
@@ -291,34 +286,34 @@
                   </div>
                 </div>
               </section>
-            </div>
-            <div class="more-products-wrapper">
-              <a href="#" class="more-products">Загрузить ещё</a>
-            </div>
-            <ul class="reset-list page-selection">
-              <li><a href="#" class="turn-back-page">Назад</a></li>
-              <li>
-                <ul class="pagination-numbers reset-list">
-                  <li class="pagination-selector">
-                    <a href="#" class="first-page page-selector">1</a>
-                  </li>
-                  <li class="pagination-selector">
-                    <a href="#" class="second-page page-selector">2</a>
-                  </li>
-                  <li class="pagination-selector">
-                    <a href="#" class="third-page page-selector">3</a>
-                  </li>
-                  <li class="pagination-selector">
-                    <a href="#" class="other-pages page-selector">...</a>
-                  </li>
-                  <li class="pagination-selector">
-                    <a href="#" class="last-page page-selector">15</a>
-                  </li>
-                </ul>
-              </li>
+              <div class="more-products-wrapper">
+                <a href="#" class="more-products">Загрузить ещё</a>
+              </div>
+              <ul class="reset-list page-selection">
+                <li><a href="#" class="turn-back-page">Назад</a></li>
+                <li>
+                  <ul class="pagination-numbers reset-list">
+                    <li class="pagination-selector">
+                      <a href="#" class="first-page page-selector">1</a>
+                    </li>
+                    <li class="pagination-selector">
+                      <a href="#" class="second-page page-selector">2</a>
+                    </li>
+                    <li class="pagination-selector">
+                      <a href="#" class="third-page page-selector">3</a>
+                    </li>
+                    <li class="pagination-selector">
+                      <a href="#" class="other-pages page-selector">...</a>
+                    </li>
+                    <li class="pagination-selector">
+                      <a href="#" class="last-page page-selector">15</a>
+                    </li>
+                  </ul>
+                </li>
 
-              <li><a href="#" class="turn-next-page">Вперёд</a></li>
-            </ul>
+                <li><a href="#" class="turn-next-page">Вперёд</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
