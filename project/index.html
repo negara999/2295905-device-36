@@ -219,7 +219,7 @@
       <span class="header-background-image">01</span>
     </header>
     <main class="main-content">
-      <section class="gallery container">
+      <section class="gallery-container">
         <div class="page-gallery-slides">
           <div class="main__page-container">
             <button
@@ -276,47 +276,157 @@
               </div>
             </div>
           </div>
-          <ul class="slider-pagination-items reset-list">
-            <li class="slider-pagination-item">
+          <div class="main__page-second-container">
+            <button
+              type="button"
+              class="page-slider-button-previous pagination-button"
+            >
+              <img
+                src="images/arrow-1.svg"
+                alt="arrow-button"
+                width="20"
+                height="60"
+              />
+              <span class="reset-link visually-hidden">Предыдушее фото</span>
+            </button>
+            <img
+              src="images/slider-1.png"
+              alt="Фото товаров"
+              class="page-slider-image"
+              width="200"
+              height="200"
+            />
+            <button
+              type="button"
+              class="page-slider-button-next pagination-button"
+            >
+              <img
+                src="images/arrow-2.svg"
+                alt="arrow-button"
+                width="20"
+                height="60"
+              />
+              <span class="reset-link visually-hidden">Следуюшее фото</span>
+            </button>
+            <div class="gallery-info">
+              <h2 class="slider-image-info section-font">Худеем правильно!</h2>
+              <p class="slider-subtitle-information gray-color">
+                Мотивирующие фитнес-браслеты помогут найти в себе силы не
+                пропускать занятия и соблюдать диету.
+              </p>
+              <button class="slider-image-more-info">Подробнее</button>
+              <div class="distance-radius-info">
+                <p
+                  class="second-slider-properties slider-information-properties"
+                >
+                  48 часов <br /><span class="slider-property gray-color"
+                    >Без подзарядки</span
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="main__page-container">
               <button
-                class="slider-pagination-button slider-pagination-first-button"
                 type="button"
+                class="page-slider-button-previous pagination-button"
               >
                 <img
-                  src="images/first-indicator.svg"
-                  alt="first-indicator"
-                  width="12"
-                  height="12"
+                  src="images/arrow-1.svg"
+                  alt="arrow-button"
+                  width="20"
+                  height="60"
                 />
+                <span class="reset-link visually-hidden">Предыдушее фото</span>
               </button>
-            </li>
-            <li class="slider-pagination-item">
+              <img
+                src="images/slider-1.png"
+                alt="Фото товаров"
+                class="page-slider-image"
+                width="200"
+                height="200"
+              />
               <button
-                class="slider-pagination-button slider-pagination-middle-button"
                 type="button"
+                class="page-slider-button-next pagination-button"
               >
                 <img
-                  src="images/second-indicator.svg"
-                  alt="second-indicator"
-                  width="12"
-                  height="12"
+                  src="images/arrow-2.svg"
+                  alt="arrow-button"
+                  width="20"
+                  height="60"
                 />
+                <span class="reset-link visually-hidden">Следуюшее фото</span>
               </button>
-            </li>
-            <li class="slider-pagination-item">
-              <button
-                class="slider-pagination-button slider-pagination-last-button"
-                type="button"
-              >
-                <img
-                  src="images/third-indicator.svg"
-                  alt="third-indicator"
-                  width="12"
-                  height="12"
-                />
-              </button>
-            </li>
-          </ul>
+              <div class="gallery-info">
+                <h2 class="slider-image-info section-font">
+                  Делай селфи, как Бен Стиллер!
+                </h2>
+                <p class="slider-subtitle-information gray-color">
+                  Самая длинная палка для селфи доступна в нашем магазине.
+                  Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
+                </p>
+                <button class="slider-image-more-info">Подробнее</button>
+                <div class="distance-radius-info">
+                  <p class="stick-length slider-information-properties">
+                    8,5 м <br /><span class="slider-property gray-color"
+                      >Длина палки</span
+                    >
+                  </p>
+                  <p class="stick-weigh slider-information-properties">
+                    5 кг <br /><span class="slider-property gray-color"
+                      >Вес палки</span
+                    >
+                  </p>
+                  <p class="stick-fabric slider-information-properties">
+                    Карбон <br /><span class="slider-property gray-color"
+                      >Материал</span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <ul class="slider-pagination-items reset-list">
+              <li class="slider-pagination-item">
+                <button
+                  class="slider-pagination-button slider-pagination-first-button"
+                  type="button"
+                >
+                  <img
+                    src="images/first-indicator.svg"
+                    alt="first-indicator"
+                    width="12"
+                    height="12"
+                  />
+                </button>
+              </li>
+              <li class="slider-pagination-item">
+                <button
+                  class="slider-pagination-button slider-pagination-middle-button"
+                  type="button"
+                >
+                  <img
+                    src="images/second-indicator.svg"
+                    alt="second-indicator"
+                    width="12"
+                    height="12"
+                  />
+                </button>
+              </li>
+              <li class="slider-pagination-item">
+                <button
+                  class="slider-pagination-button slider-pagination-last-button"
+                  type="button"
+                >
+                  <img
+                    src="images/third-indicator.svg"
+                    alt="third-indicator"
+                    width="12"
+                    height="12"
+                  />
+                </button>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <section>
@@ -417,7 +527,6 @@
               <button class="information-item-guarantee">Гарантия</button>
             </li>
             <li><button class="information-item-credit">Кредит</button></li>
-            <span class="decor-main"></span>
           </ul>
         </div>
         <div class="delivery-information container">
