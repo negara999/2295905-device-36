@@ -7,7 +7,7 @@
   </head>
   <body>
     <header class="page-header container">
-      <a href="/" class="header-logo">
+      <a href="index.html" class="header-logo">
         <img
           src="images/logo.svg"
           alt="site-name"
@@ -67,8 +67,9 @@
                 >
               </li>
               <li class="navigation-item">
-                <a href="#" class="navigation-shopping-cart"
-                  ><img
+                <a href="#" class="navigation-shopping-cart">
+                  <span class="shopping-cart-content">2</span>
+                  <img
                     src="images/cart.svg"
                     alt="search-icon"
                     class="search-icon"
@@ -146,173 +147,255 @@
         </ul>
       </div>
     </header>
-    <main class="main-page container">
-      <h2 class="main__page-title section-font">Моноподы для селфи</h2>
-      <div class="main-page-selection">
-        <p class="main">Главная</p>
-        <p class="products-catalog">Каталог товаров</p>
-        <p class="main-page-product">Моноподы для селфи</p>
-      </div>
-      <div class="catalog-page-wrapper">
-        <div class="product-properties">
-          <div><h4 class="filter">Фильтр:</h4></div>
-          <h4 class="pricing sidebar-filter-header">Стоимость</h4>
-          <label>
-            <sub>от 0</sub><input type="range" /><sub>до 5000</sub>
-          </label>
-          <section>
-            <div class="choose-product-color">
-              <h4 class="product-color sidebar-filter-header">Цвет</h4>
-              <label>
-                <input type="checkbox" class="black-color" checked />
-                Черный
-              </label>
-              <label>
-                <input type="checkbox" class="white-color" checked />
-                Белый
-              </label>
-              <label
-                ><input type="checkbox" class="blue-color" />
-                Синий
-              </label>
-              <label
-                ><input type="checkbox" class="red-color" />
-                Красный
-              </label>
-              <label class="checkbox-pink-color"
-                ><input type="checkbox" class="pink-color" />
-                Розовый
-              </label>
-            </div>
-          </section>
-          <section class="bluetooth-checking">
-            <h4 class="bluetooth sidebar-filter-header">Bluetooth</h4>
-            <div class="bluetooth-support">
-              <label>
-                <input type="radio" class="bluetooth-on" checked />
-                Есть
-              </label>
-              <label> <input type="radio" class="bluetooth-off" />Нет </label>
-            </div>
-            <a href="#" class="show-more">Показать</a>
-          </section>
+    <main class="main-page">
+      <div class="container">
+        <h2 class="main__page-title section-font">Моноподы для селфи</h2>
+        <div class="main-page-selection">
+          <p class="main">Главная</p>
+          <p class="products-catalog">Каталог товаров</p>
+          <p class="main-page-product">Моноподы для селфи</p>
         </div>
-        <div class="catalog-wrapper">
-          <div class="catalog-info">
-            <div class="products-specifics">
-              <div><h4 class="sorting">Сортировка:</h4></div>
-              <div class="popular-products">
-                <select class="sorting-options">
-                  <option>Популярные</option>
-                  <option>По алфавиту</option>
-                </select>
+        <div class="catalog-page-wrapper">
+          <div class="product-properties">
+            <div><h4 class="filter">Фильтр:</h4></div>
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title filter-header">
+                Стоимость
+              </legend>
+              <div class="range">
+                <div class="range-scale">
+                  <div class="range-bar">
+                    <button class="range-toggle toggle-min">
+                      <span class="visually-hidden"
+                        >Изменить минимальную цену.</span
+                      >
+                      <span class="min-price gray-color">от 0</span>
+                    </button>
+                    <button class="range-toggle toggle-max">
+                      <span class="visually-hidden"
+                        >Изменить максимальную цену.</span
+                      >
+                      <span class="max-price gray-color">до 5000</span>
+                    </button>
+                  </div>
+                </div>
               </div>
-              <div class="page-arrows">
-                <img
-                  src="images/arrow-up.svg"
-                  alt="arrow-button"
-                  width="12"
-                  height="10"
-                />
-                <img
-                  src="images/arrow-down-near-up.svg"
-                  alt="arrow-button"
-                  width="12"
-                  height="10"
-                />
+            </fieldset>
+            <section>
+              <div class="choose-product-color">
+                <h4 class="product-color filter-header">Цвет</h4>
+                <ul class="catalog-filter-list">
+                  <li class="catalog-filter-item">
+                    <label class="control">
+                      <input
+                        class="visually-hidden control-input"
+                        type="checkbox"
+                        name="product-black-color"
+                        checked
+                      />
+                      <span class="control-mark"></span>
+                      <span class="control-label">Черный</span>
+                    </label>
+                  </li>
+                  <li class="catalog-filter-item">
+                    <label class="control">
+                      <input
+                        class="visually-hidden control-input"
+                        type="checkbox"
+                        name="product-white-color"
+                        checked
+                      />
+                      <span class="control-mark"></span>
+                      <span class="control-label">Белый</span>
+                    </label>
+                  </li>
+                  <li class="catalog-filter-item">
+                    <label class="control">
+                      <input
+                        class="visually-hidden control-input"
+                        type="checkbox"
+                        name="product-blue-color"
+                      />
+                      <span class="control-mark"></span>
+                      <span class="control-label">Синий</span>
+                    </label>
+                  </li>
+                  <li class="catalog-filter-item">
+                    <label class="control">
+                      <input
+                        class="visually-hidden control-input"
+                        type="checkbox"
+                        name="product-red-color"
+                      />
+                      <span class="control-mark"></span>
+                      <span class="control-label">Красный</span>
+                    </label>
+                  </li>
+                  <li class="catalog-filter-item">
+                    <label class="control">
+                      <input
+                        class="visually-hidden control-input"
+                        type="checkbox"
+                        name="product-pink-color"
+                      />
+                      <span class="control-mark"></span>
+                      <span class="control-label">Розовый</span>
+                    </label>
+                  </li>
+                </ul>
               </div>
-            </div>
-            <div class="selfie-sticks">
-              <section class="catalog-products-wrapper">
-                <div class="amateur-selfie-stick catalog-products-items">
-                  <img
-                    src="images/amateur-selfie-stick.png"
-                    alt="selfie-stick"
-                    width="360"
-                    height="380"
-                  />
-                  <div class="info-image-wrapper">
-                    <h5 class="selfie-stick">
-                      Любительская <br />
-                      селфи-палка
-                    </h5>
-                    <h5 class="price">500 ₽</h5>
-                  </div>
-                </div>
-                <div class="professional-selfie-stick catalog-products-items">
-                  <img
-                    src="images/professional-selfie-stick.png"
-                    alt="selfie-stick"
-                    class="professional-selfie-stick"
-                    width="360"
-                    height="380"
-                  />
-                  <div class="info-image-wrapper">
-                    <h5 class="selfie-stick">
-                      Профессиональная <br />
-                      селфи-палка
-                    </h5>
-                    <h5 class="price">1 500 ₽</h5>
-                  </div>
-                </div>
-                <div class="waterproof-selfie-stick catalog-products-items">
-                  <img
-                    src="images/waterproof-selfie-stick.png"
-                    alt="selfie-stick"
-                    width="360"
-                    height="380"
-                  />
-                  <div class="info-image-wrapper">
-                    <h5 class="selfie-stick">
-                      Непотопляемая <br />
-                      селфи-палка
-                    </h5>
-                    <h5 class="price">2 500 ₽</h5>
-                  </div>
-                </div>
-                <div class="carry-with-selfie-stick catalog-products-items">
-                  <img
-                    src="images/carry-with-selfie-stick.png"
-                    alt="selfie-stick"
-                    width="360"
-                    height="380"
-                  />
-                  <div class="info-image-wrapper">
-                    <h5 class="selfie-stick">
-                      Селфи-палка <br />
-                      «Следуй за мной»
-                    </h5>
-                    <h5 class="price">1 500 ₽</h5>
-                  </div>
-                </div>
-              </section>
-              <div class="more-products-wrapper">
-                <a href="#" class="more-products">Загрузить ещё</a>
+            </section>
+            <section class="bluetooth-checking">
+              <h4 class="bluetooth filter-header">Bluetooth</h4>
+              <div class="bluetooth-support">
+                <ul class="catalog-filter-list">
+                  <li class="catalog-filter-item">
+                    <label class="control">
+                      <input
+                        class="visually-hidden control-input"
+                        type="radio"
+                        name="bluetooth"
+                        value="bluetooth-option"
+                        checked
+                      />
+                      <span class="control-mark"></span>
+                      <span class="control-label">Есть</span>
+                    </label>
+                  </li>
+                  <li class="catalog-filter-item">
+                    <label class="control">
+                      <input
+                        class="visually-hidden control-input"
+                        type="radio"
+                        name="bluetooth"
+                        value="bluetooth-option"
+                      />
+                      <span class="control-mark"></span>
+                      <span class="control-label">Нет</span>
+                    </label>
+                  </li>
+                </ul>
               </div>
-              <ul class="reset-list page-selection">
-                <li><a href="#" class="turn-back-page">Назад</a></li>
-                <li>
-                  <ul class="pagination-numbers reset-list">
-                    <li class="pagination-selector">
-                      <a href="#" class="first-page page-selector">1</a>
-                    </li>
-                    <li class="pagination-selector">
-                      <a href="#" class="second-page page-selector">2</a>
-                    </li>
-                    <li class="pagination-selector">
-                      <a href="#" class="third-page page-selector">3</a>
-                    </li>
-                    <li class="pagination-selector">
-                      <a href="#" class="other-pages page-selector">...</a>
-                    </li>
-                    <li class="pagination-selector">
-                      <a href="#" class="last-page page-selector">15</a>
-                    </li>
-                  </ul>
-                </li>
+              <a href="#" class="show-more">Показать</a>
+            </section>
+          </div>
+          <div class="catalog-wrapper">
+            <div class="catalog-info">
+              <div class="products-specifics">
+                <div><h4 class="sorting">Сортировка:</h4></div>
+                <div class="popular-products">
+                  <select class="sorting-options">
+                    <option>Популярные</option>
+                    <option>По алфавиту</option>
+                  </select>
+                </div>
+                <div class="page-arrows">
+                  <img
+                    src="images/arrow-up.svg"
+                    alt="arrow-button"
+                    width="12"
+                    height="10"
+                  />
+                  <img
+                    src="images/arrow-down-near-up.svg"
+                    alt="arrow-button"
+                    width="12"
+                    height="10"
+                  />
+                </div>
+              </div>
+              <div class="selfie-sticks">
+                <section class="catalog-products-wrapper">
+                  <div class="amateur-selfie-stick catalog-products-items">
+                    <img
+                      src="images/amateur-selfie-stick.png"
+                      alt="selfie-stick"
+                      width="360"
+                      height="380"
+                    />
+                    <div class="info-image-wrapper">
+                      <h5 class="selfie-stick">
+                        Любительская <br />
+                        селфи-палка
+                      </h5>
+                      <h5 class="price">500 ₽</h5>
+                    </div>
+                  </div>
+                  <div class="professional-selfie-stick catalog-products-items">
+                    <img
+                      src="images/professional-selfie-stick.png"
+                      alt="selfie-stick"
+                      class="professional-selfie-stick"
+                      width="360"
+                      height="380"
+                    />
+                    <div class="info-image-wrapper">
+                      <h5 class="selfie-stick">
+                        Профессиональная <br />
+                        селфи-палка
+                      </h5>
+                      <h5 class="price">1 500 ₽</h5>
+                    </div>
+                  </div>
+                  <div class="waterproof-selfie-stick catalog-products-items">
+                    <img
+                      src="images/waterproof-selfie-stick.png"
+                      alt="selfie-stick"
+                      width="360"
+                      height="380"
+                    />
+                    <div class="info-image-wrapper">
+                      <h5 class="selfie-stick">
+                        Непотопляемая <br />
+                        селфи-палка
+                      </h5>
+                      <h5 class="price">2 500 ₽</h5>
+                    </div>
+                  </div>
+                  <div class="carry-with-selfie-stick catalog-products-items">
+                    <img
+                      src="images/carry-with-selfie-stick.png"
+                      alt="selfie-stick"
+                      width="360"
+                      height="380"
+                    />
+                    <div class="info-image-wrapper">
+                      <h5 class="selfie-stick">
+                        Селфи-палка <br />
+                        «Следуй за мной»
+                      </h5>
+                      <h5 class="price">1 500 ₽</h5>
+                    </div>
+                  </div>
+                </section>
+                <div class="more-products-wrapper">
+                  <a href="#" class="more-products">Загрузить ещё</a>
+                </div>
+                <ul class="reset-list page-selection">
+                  <li><a href="#" class="turn-back-page">Назад</a></li>
+                  <li>
+                    <ul class="pagination-numbers reset-list">
+                      <li class="pagination-selector">
+                        <a href="#" class="first-page page-selector">1</a>
+                      </li>
+                      <li class="pagination-selector">
+                        <a href="#" class="second-page page-selector">2</a>
+                      </li>
+                      <li class="pagination-selector">
+                        <a href="#" class="third-page page-selector">3</a>
+                      </li>
+                      <li class="pagination-selector">
+                        <a href="#" class="other-pages page-selector">...</a>
+                      </li>
+                      <li class="pagination-selector">
+                        <a href="#" class="last-page page-selector">15</a>
+                      </li>
+                    </ul>
+                  </li>
 
-                <li><a href="#" class="turn-next-page">Вперёд</a></li>
-              </ul>
+                  <li><a href="#" class="turn-next-page">Вперёд</a></li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>

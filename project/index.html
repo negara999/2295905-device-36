@@ -216,11 +216,11 @@
           </li>
         </ul>
       </div>
-      <span class="header-background-image">01</span>
     </header>
     <main class="main-content">
-      <section class="gallery-container">
+      <section class="gallery container">
         <div class="page-gallery-slides">
+          <span class="header-background-image">01</span>
           <div class="main__page-container">
             <button
               type="button"
@@ -276,7 +276,51 @@
               </div>
             </div>
           </div>
-          <div class="main__page-second-container">
+          <ul class="slider-pagination-items reset-list">
+            <li class="slider-pagination-item">
+              <button
+                class="slider-pagination-button slider-pagination-first-button"
+                type="button"
+              >
+                <img
+                  src="images/first-indicator.svg"
+                  alt="first-indicator"
+                  width="12"
+                  height="12"
+                />
+              </button>
+            </li>
+            <li class="slider-pagination-item">
+              <button
+                class="slider-pagination-button slider-pagination-middle-button"
+                type="button"
+              >
+                <img
+                  src="images/second-indicator.svg"
+                  alt="second-indicator"
+                  width="12"
+                  height="12"
+                />
+              </button>
+            </li>
+            <li class="slider-pagination-item">
+              <button
+                class="slider-pagination-button slider-pagination-last-button"
+                type="button"
+              >
+                <img
+                  src="images/third-indicator.svg"
+                  alt="third-indicator"
+                  width="12"
+                  height="12"
+                />
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="page-gallery-slides visually-hidden">
+          <span class="header-background-image">02</span>
+          <div class="main__page-container">
             <button
               type="button"
               class="page-slider-button-previous pagination-button"
@@ -290,7 +334,7 @@
               <span class="reset-link visually-hidden">Предыдушее фото</span>
             </button>
             <img
-              src="images/slider-1.png"
+              src="images/slider-2.png"
               alt="Фото товаров"
               class="page-slider-image"
               width="200"
@@ -316,117 +360,155 @@
               </p>
               <button class="slider-image-more-info">Подробнее</button>
               <div class="distance-radius-info">
-                <p
-                  class="second-slider-properties slider-information-properties"
-                >
-                  48 часов <br /><span class="slider-property gray-color"
+                <p class="flight-distance">
+                  48 часов <br /><span class="distance gray-color"
                     >Без подзарядки</span
                   >
                 </p>
               </div>
             </div>
-            <div class="main__page-container">
+          </div>
+          <ul class="slider-pagination-items reset-list">
+            <li class="slider-pagination-item">
               <button
+                class="slider-pagination-button slider-pagination-first-button"
                 type="button"
-                class="page-slider-button-previous pagination-button"
               >
                 <img
-                  src="images/arrow-1.svg"
-                  alt="arrow-button"
-                  width="20"
-                  height="60"
+                  src="images/second-indicator.svg"
+                  alt="first-indicator"
+                  width="12"
+                  height="12"
                 />
-                <span class="reset-link visually-hidden">Предыдушее фото</span>
               </button>
+            </li>
+            <li class="slider-pagination-item">
+              <button
+                class="slider-pagination-button slider-pagination-middle-button"
+                type="button"
+              >
+                <img
+                  src="images/first-indicator.svg"
+                  alt="second-indicator"
+                  width="12"
+                  height="12"
+                />
+              </button>
+            </li>
+            <li class="slider-pagination-item">
+              <button
+                class="slider-pagination-button slider-pagination-last-button"
+                type="button"
+              >
+                <img
+                  src="images/third-indicator.svg"
+                  alt="third-indicator"
+                  width="12"
+                  height="12"
+                />
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="page-gallery-slides visually-hidden">
+          <span class="header-background-image">03</span>
+          <div class="main__page-container">
+            <button
+              type="button"
+              class="page-slider-button-previous pagination-button"
+            >
               <img
-                src="images/slider-1.png"
-                alt="Фото товаров"
-                class="page-slider-image"
-                width="200"
-                height="200"
+                src="images/arrow-1.svg"
+                alt="arrow-button"
+                width="20"
+                height="60"
               />
-              <button
-                type="button"
-                class="page-slider-button-next pagination-button"
-              >
-                <img
-                  src="images/arrow-2.svg"
-                  alt="arrow-button"
-                  width="20"
-                  height="60"
-                />
-                <span class="reset-link visually-hidden">Следуюшее фото</span>
-              </button>
-              <div class="gallery-info">
-                <h2 class="slider-image-info section-font">
-                  Делай селфи, как Бен Стиллер!
-                </h2>
-                <p class="slider-subtitle-information gray-color">
-                  Самая длинная палка для селфи доступна в нашем магазине.
-                  Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
+              <span class="reset-link visually-hidden">Предыдушее фото</span>
+            </button>
+            <img
+              src="images/slider-3.png"
+              alt="Фото товаров"
+              class="page-slider-image"
+              width="200"
+              height="200"
+            />
+            <button
+              type="button"
+              class="page-slider-button-next pagination-button"
+            >
+              <img
+                src="images/arrow-2.svg"
+                alt="arrow-button"
+                width="20"
+                height="60"
+              />
+              <span class="reset-link visually-hidden">Следуюшее фото</span>
+            </button>
+            <div class="gallery-info">
+              <h2 class="slider-image-info section-font">
+                Делай селфи, как Бен Стиллер!
+              </h2>
+              <p class="slider-subtitle-information gray-color">
+                Самая длинная палка для селфи доступна в нашем магазине. Восемь
+                (Восемь, Карл!) метров длиной и весом всего 5 кг.
+              </p>
+              <button class="slider-image-more-info">Подробнее</button>
+              <div class="distance-radius-info third-slider-info">
+                <p class="flight-distance">
+                  8,5 м <br /><span class="distance gray-color"
+                    >Длина палки</span
+                  >
                 </p>
-                <button class="slider-image-more-info">Подробнее</button>
-                <div class="distance-radius-info">
-                  <p class="stick-length slider-information-properties">
-                    8,5 м <br /><span class="slider-property gray-color"
-                      >Длина палки</span
-                    >
-                  </p>
-                  <p class="stick-weigh slider-information-properties">
-                    5 кг <br /><span class="slider-property gray-color"
-                      >Вес палки</span
-                    >
-                  </p>
-                  <p class="stick-fabric slider-information-properties">
-                    Карбон <br /><span class="slider-property gray-color"
-                      >Материал</span
-                    >
-                  </p>
-                </div>
+                <p class="flight-radius">
+                  5 кг <br /><span class="radius gray-color">Вес палки</span>
+                </p>
+                <p class="flight-radius">
+                  Карбон <br /><span class="radius gray-color">Материал</span>
+                </p>
               </div>
             </div>
-            <ul class="slider-pagination-items reset-list">
-              <li class="slider-pagination-item">
-                <button
-                  class="slider-pagination-button slider-pagination-first-button"
-                  type="button"
-                >
-                  <img
-                    src="images/first-indicator.svg"
-                    alt="first-indicator"
-                    width="12"
-                    height="12"
-                  />
-                </button>
-              </li>
-              <li class="slider-pagination-item">
-                <button
-                  class="slider-pagination-button slider-pagination-middle-button"
-                  type="button"
-                >
-                  <img
-                    src="images/second-indicator.svg"
-                    alt="second-indicator"
-                    width="12"
-                    height="12"
-                  />
-                </button>
-              </li>
-              <li class="slider-pagination-item">
-                <button
-                  class="slider-pagination-button slider-pagination-last-button"
-                  type="button"
-                >
-                  <img
-                    src="images/third-indicator.svg"
-                    alt="third-indicator"
-                    width="12"
-                    height="12"
-                  />
-                </button>
-              </li>
-            </ul>
           </div>
+          <ul class="slider-pagination-items reset-list">
+            <li class="slider-pagination-item">
+              <button
+                class="slider-pagination-button slider-pagination-first-button"
+                type="button"
+              >
+                <img
+                  src="images/third-indicator.svg"
+                  alt="first-indicator"
+                  width="12"
+                  height="12"
+                />
+              </button>
+            </li>
+            <li class="slider-pagination-item">
+              <button
+                class="slider-pagination-button slider-pagination-middle-button"
+                type="button"
+              >
+                <img
+                  src="images/second-indicator.svg"
+                  alt="second-indicator"
+                  width="12"
+                  height="12"
+                />
+              </button>
+            </li>
+            <li class="slider-pagination-item">
+              <button
+                class="slider-pagination-button slider-pagination-last-button"
+                type="button"
+              >
+                <img
+                  src="images/first-indicator.svg"
+                  alt="third-indicator"
+                  width="12"
+                  height="12"
+                />
+              </button>
+            </li>
+          </ul>
         </div>
       </section>
       <section>
@@ -548,6 +630,40 @@
                 class="delivery-man"
               />
             </div>
+            <div class="shipping-info-and-image visually-hidden">
+              <div class="shipping-information-wrapper">
+                <h2 class="shipping section-font">Гарантия</h2>
+                <p class="shipping-subtitle-information gray-color">
+                  Если из-за возгорания купленного у нас товара у вас сгорит дом
+                  — не переживайте, мы выдадим вам новый. Товар, не дом, конечно
+                  же.
+                </p>
+              </div>
+              <img
+                src="images/guarantee.svg"
+                alt="delivery-man"
+                width="136"
+                height="165"
+                class="delivery-man"
+              />
+            </div>
+            <div class="shipping-info-and-image visually-hidden">
+              <div class="shipping-information-wrapper">
+                <h2 class="shipping section-font">Кредит</h2>
+                <p class="shipping-subtitle-information gray-color">
+                  Залезть в долговую яму стало проще! Кредитные консультанты
+                  подберут для вас наиболее выгодные условия кредита. Выгодные
+                  для банка, разумеется.
+                </p>
+              </div>
+              <img
+                src="images/credit.svg"
+                alt="delivery-man"
+                width="136"
+                height="165"
+                class="delivery-man"
+              />
+            </div>
           </section>
         </div>
       </section>
@@ -566,7 +682,7 @@
       <div class="additional-info container">
         <section class="main-page-style">
           <span class="main-page-decor"></span>
-          <h2 class="about-us__main section-font">O нас</h2>
+          <h2 class="about-us__main section-font decor">O нас</h2>
           <p class="about-us__main-subtitle-information">
             Огромный выбор гаджетов не оставит равнодушным гика, который есть в
             каждом из нас.
@@ -584,7 +700,7 @@
         </section>
         <section>
           <span class="main-page-decor"></span>
-          <h2 class="main__contact section-font">Контакты</h2>
+          <h2 class="main__contact section-font decor">Контакты</h2>
           <p class="main__contact-subtitle-information gray-color">
             Вы можете забрать товар сами, заехав в наш офис. Заодно сможете
             проверить работоспособность покупки.
@@ -693,5 +809,84 @@
         </div>
       </div>
     </footer>
+
+    <div class="modal-container visually-hidden">
+      <div class="modal modal-auth">
+        <section class="modal-content">
+          <div class="modal-header-wrapper">
+            <h2 class="modal-title">Доставка под заказ</h2>
+            <button class="modal-close-button">
+              <span class="visually-hidden">Закрыть</span>
+            </button>
+          </div>
+          <form
+            class="auth-form"
+            action="https://echo.htmlacademy.ru/"
+            method="post"
+          >
+            <div class="login-wrapper">
+              <p class="field-group">
+                <label class="label" for="auth-login">Ваше имя:</label>
+                <input
+                  class="auth-form-field field"
+                  type="text"
+                  id="auth-login"
+                  name="auth-login"
+                  placeholder="Введите имя"
+                />
+              </p>
+              <p class="field-group">
+                <label class="label" for="auth-email">Ваш e-mail:</label>
+                <input
+                  class="auth-form-field field"
+                  type="email"
+                  id="auth-email"
+                  name="auth-email"
+                  placeholder="почта"
+                />
+              </p>
+            </div>
+            <div class="form-text-wrapper">
+              <p class="field-group">
+                <label class="label" for="auth-text">Что нужно привезти:</label>
+                <input
+                  class="auth-form-field field"
+                  type="text"
+                  id="auth-text"
+                  name="auth-text"
+                  placeholder="В свободной форме"
+                />
+              </p>
+              <div class="field-group">
+                <label class="label label-numbers" for="auth-number"
+                  >Количество:
+                  <span class="info-icon">
+                    <span>i</span>
+                    <span class="info-modal"
+                      >Постараемся найти, сколько нужно. Привезём сколько
+                      получится по требованиям <br />
+                      к провозу багажа.</span
+                    >
+                  </span>
+                </label>
+                <div class="number">
+                  <span class="minus">-</span>
+                  <input
+                    class="auth-form-field field field-numbers"
+                    type="number"
+                    id="auth-number"
+                    name="number"
+                    value="1"
+                    min="0"
+                  />
+                  <span class="plus">+</span>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="form-sending-button">Отправить</button>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 </html>
