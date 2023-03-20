@@ -4,46 +4,52 @@
     <meta charset="utf-8" />
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
   </head>
   <body>
     <header class="page-header container">
-      <a href="/" class="header-logo">
+      <h1 class="visually-hidden">device</h1>
+      <a href="#" class="header-logo link">
         <img
           src="images/logo.svg"
-          alt="site-name"
+          alt="site-name."
           width="145"
-          height="36"
+          height="50"
           class="logo-image"
         />
       </a>
       <nav class="navigation">
         <div class="header-container">
-          <div class="page-header__search-box">
+          <form
+            action="https://echo.htmlacademy.ru"
+            class="page-header__search-box"
+          >
             <label class="search-box-label">
               <img
                 src="images/search.svg"
-                alt="search-icon"
+                alt="search-icon."
                 class="page-header__search-icon"
                 width="16"
                 height="16"
               />
               <input
-                type="search"
                 placeholder="Поиск по сайту"
                 class="page-header__search-text"
+                name="search"
               />
             </label>
-            <button type="button" class="page-header__search-button">
+            <button type="submit" class="page-header__search-button">
               Найти
             </button>
-          </div>
+          </form>
           <div class="heading-items">
             <ul class="navigation-items-header reset-list">
               <li class="navigation-item navigation-item__user">
-                <a href="#" class="navigation-user"
+                <a href="#" class="navigation-user link"
                   ><img
                     src="images/login.svg"
-                    alt="search-icon"
+                    alt="search-icon."
                     class="search-icon"
                     width="15"
                     height="12"
@@ -51,10 +57,10 @@
                 >
               </li>
               <li class="navigation-item">
-                <a href="#" class="navigation-compare"
+                <a href="#" class="navigation-compare link"
                   ><img
                     src="images/diagram.svg"
-                    alt="search-icon"
+                    alt="search-icon."
                     class="search-icon"
                     width="10"
                     height="12"
@@ -64,10 +70,11 @@
                 >
               </li>
               <li class="navigation-item navigation-item-cart">
-                <a href="#" class="navigation-shopping-cart"
-                  ><img
+                <a href="#" class="navigation-shopping-cart link">
+                  <span class="shopping-cart-content">2</span>
+                  <img
                     src="images/cart.svg"
-                    alt="search-icon"
+                    alt="search-icon."
                     class="search-icon"
                     width="16"
                     height="14"
@@ -79,7 +86,7 @@
                       <li class="cart-item">
                         <img
                           src="images/amateur-selfie-stick.png"
-                          alt="selfie-stick"
+                          alt="selfie-stick."
                           width="39"
                           height="43"
                         />
@@ -108,7 +115,7 @@
                       <li class="cart-item">
                         <img
                           src="images/professional-selfie-stick.png"
-                          alt="selfie-stick"
+                          alt="selfie-stick."
                           class="professional-selfie-stick"
                           width="39"
                           height="43"
@@ -143,7 +150,7 @@
                     <p>Товаров: 2</p>
                     <p>Сумма: 2000 ₽</p>
                   </div>
-                  <a class="open-cart">Открыть корзину</a>
+                  <a class="open-cart link">Открыть корзину</a>
                 </div>
               </li>
             </ul>
@@ -153,7 +160,7 @@
       <div class="header__navigation-items container">
         <ul class="main__navigation reset-list">
           <li class="main__navigation-item">
-            <a href="catalog.html" class="main-navogation-link">
+            <a href="catalog.html" class="main-navogation-link link">
               <h3
                 class="main__navigation-button section-font navigation-buttons"
               >
@@ -163,56 +170,60 @@
             <button type="button" class="catalog__search-sub-navigation-items">
               <img
                 src="images/ellipse-2.svg"
-                alt="catalog-button"
+                alt="catalog-button."
                 width="50"
                 height="50"
               />
+              <div class="sub-catalog-items">
+                <ul class="catalog__sub-navigation-items reset-link reset-list">
+                  <li class="catalog__sub-navigation-item">
+                    <a href="#" class="link">Виртуальная реальность</a>
+                  </li>
+                  <li class="catalog__sub-navigation-item">
+                    <a href="#" class="link">Моноподы для ceлфи</a>
+                  </li>
+                  <li class="catalog__sub-navigation-item">
+                    <a href="#" class="link">Экшн-камеры</a>
+                  </li>
+                </ul>
+                <ul class="catalog__sub-navigation-items reset-link reset-list">
+                  <li class="catalog__sub-navigation-item">
+                    <a href="#" class="link">Фитнес-браслеты</a>
+                  </li>
+                  <li class="catalog__sub-navigation-item">
+                    <a href="#" class="link">Умные часы</a>
+                  </li>
+                </ul>
+                <ul class="catalog__sub-navigation-items reset-link reset-list">
+                  <li class="catalog__sub-navigation-item">
+                    <a href="#" class="link">Квадрокоптеры</a>
+                  </li>
+                </ul>
+              </div>
             </button>
           </li>
         </ul>
         <ul class="navigation-items reset-list">
-          <li class="main__navigation-item">
+          <li class="main__navigation-item navigation-item">
             <a
               href="#"
-              class="main__navigation-button-shipping navigation-buttons"
+              class="main__navigation-button-shipping navigation-buttons link"
               >Доставка</a
             >
           </li>
           <li class="navigation-item">
             <a
               href="#"
-              class="main__navigation-button-guarantee navigation-buttons"
+              class="main__navigation-button-guarantee navigation-buttons link"
               >Гарантия</a
             >
           </li>
           <li class="navigation-item">
             <a
               href="#"
-              class="main__navigation-button-contacts navigation-buttons"
+              class="main__navigation-button-contacts navigation-buttons link"
               >Контакты</a
             >
-          </li>
-        </ul>
-      </div>
-      <div class="sub-catalog-items visually-hidden">
-        <ul class="catalog__sub-navigation-items reset-link reset-list">
-          <li class="catalog__navigation-item">
-            <a href="#">Виртуальная реальность</a>
-          </li>
-          <li class="catalog__sub-navigation-item">
-            <a href="#">Моноподы для ceлфи</a>
-          </li>
-          <li class="catalog__sub-navigation-item">
-            <a href="#">Экшн-камеры</a>
-          </li>
-          <li class="catalog__sub-navigation-item">
-            <a href="#">Фитнес-браслеты</a>
-          </li>
-          <li class="catalog__sub-navigation-item">
-            <a href="#">Умные часы</a>
-          </li>
-          <li class="catalog__sub-navigation-item">
-            <a href="#">Квадрокоптеры</a>
           </li>
         </ul>
       </div>
@@ -228,7 +239,7 @@
             >
               <img
                 src="images/arrow-1.svg"
-                alt="arrow-button"
+                alt="arrow-button."
                 width="20"
                 height="60"
               />
@@ -236,7 +247,7 @@
             </button>
             <img
               src="images/slider-1.png"
-              alt="Фото товаров"
+              alt="Фото товаров."
               class="page-slider-image"
               width="200"
               height="200"
@@ -247,7 +258,7 @@
             >
               <img
                 src="images/arrow-2.svg"
-                alt="arrow-button"
+                alt="arrow-button."
                 width="20"
                 height="60"
               />
@@ -261,18 +272,18 @@
                 Этот обычный, на первый взгляд, квадрокоптер оснащен мощным
                 лазером, замаскированным под стандартную камеру.
               </p>
-              <button class="slider-image-more-info">Подробнее</button>
+              <button class="slider-image-more-info more-info">
+                Подробнее
+              </button>
               <div class="distance-radius-info">
-                <p class="flight-distance">
-                  800 м <br /><span class="distance gray-color"
-                    >Дальность полета</span
-                  >
-                </p>
-                <p class="flight-radius">
-                  50 м <br /><span class="radius gray-color"
-                    >Радиус поражения</span
-                  >
-                </p>
+                <div class="flight-info">
+                  <p class="flight-distance">800 м</p>
+                  <span class="distance gray-color">Дальность полета</span>
+                </div>
+                <div class="flight-info">
+                  <p class="flight-radius">50 м</p>
+                  <span class="radius gray-color">Радиус поражения</span>
+                </div>
               </div>
             </div>
           </div>
@@ -284,7 +295,7 @@
               >
                 <img
                   src="images/first-indicator.svg"
-                  alt="first-indicator"
+                  alt="first-indicator."
                   width="12"
                   height="12"
                 />
@@ -297,7 +308,7 @@
               >
                 <img
                   src="images/second-indicator.svg"
-                  alt="second-indicator"
+                  alt="second-indicator."
                   width="12"
                   height="12"
                 />
@@ -310,7 +321,7 @@
               >
                 <img
                   src="images/third-indicator.svg"
-                  alt="third-indicator"
+                  alt="third-indicator."
                   width="12"
                   height="12"
                 />
@@ -327,7 +338,7 @@
             >
               <img
                 src="images/arrow-1.svg"
-                alt="arrow-button"
+                alt="arrow-button."
                 width="20"
                 height="60"
               />
@@ -335,7 +346,7 @@
             </button>
             <img
               src="images/slider-2.png"
-              alt="Фото товаров"
+              alt="Фото товаров."
               class="page-slider-image"
               width="200"
               height="200"
@@ -346,7 +357,7 @@
             >
               <img
                 src="images/arrow-2.svg"
-                alt="arrow-button"
+                alt="arrow-button."
                 width="20"
                 height="60"
               />
@@ -358,7 +369,9 @@
                 Мотивирующие фитнес-браслеты помогут найти в себе силы не
                 пропускать занятия и соблюдать диету.
               </p>
-              <button class="slider-image-more-info">Подробнее</button>
+              <button class="slider-image-more-info more-info">
+                Подробнее
+              </button>
               <div class="distance-radius-info">
                 <p class="flight-distance">
                   48 часов <br /><span class="distance gray-color"
@@ -376,7 +389,7 @@
               >
                 <img
                   src="images/second-indicator.svg"
-                  alt="first-indicator"
+                  alt="first-indicator."
                   width="12"
                   height="12"
                 />
@@ -389,7 +402,7 @@
               >
                 <img
                   src="images/first-indicator.svg"
-                  alt="second-indicator"
+                  alt="second-indicator."
                   width="12"
                   height="12"
                 />
@@ -402,7 +415,7 @@
               >
                 <img
                   src="images/third-indicator.svg"
-                  alt="third-indicator"
+                  alt="third-indicator."
                   width="12"
                   height="12"
                 />
@@ -419,7 +432,7 @@
             >
               <img
                 src="images/arrow-1.svg"
-                alt="arrow-button"
+                alt="arrow-button."
                 width="20"
                 height="60"
               />
@@ -427,7 +440,7 @@
             </button>
             <img
               src="images/slider-3.png"
-              alt="Фото товаров"
+              alt="Фото товаров."
               class="page-slider-image"
               width="200"
               height="200"
@@ -438,7 +451,7 @@
             >
               <img
                 src="images/arrow-2.svg"
-                alt="arrow-button"
+                alt="arrow-button."
                 width="20"
                 height="60"
               />
@@ -476,7 +489,7 @@
               >
                 <img
                   src="images/third-indicator.svg"
-                  alt="first-indicator"
+                  alt="first-indicator."
                   width="12"
                   height="12"
                 />
@@ -489,7 +502,7 @@
               >
                 <img
                   src="images/second-indicator.svg"
-                  alt="second-indicator"
+                  alt="second-indicator."
                   width="12"
                   height="12"
                 />
@@ -502,7 +515,7 @@
               >
                 <img
                   src="images/first-indicator.svg"
-                  alt="third-indicator"
+                  alt="third-indicator."
                   width="12"
                   height="12"
                 />
@@ -515,11 +528,11 @@
         <div class="product-items-photos container">
           <ul class="site-products reset-list">
             <li class="site-product">
-              <a href="#"
+              <a href="#" class="link"
                 ><div class="image-product-wrapper">
                   <img
                     src="images/vr-glasses.svg"
-                    alt="Виртуальная реальность"
+                    alt="Виртуальная реальность."
                     class="vr-glasses product-image"
                     width="97"
                     height="55"
@@ -529,25 +542,25 @@
               >
             </li>
             <li class="site-product">
-              <a href="#"
-                ><div class="image-product-wrapper">
+              <a href="#" class="link"
+                ><div class="image-product-wrapper image-product-end">
                   <img
                     src="images/monopod.svg"
-                    alt="Моноподы для селфи"
+                    alt="Моноподы для селфи."
                     class="monopod product-image"
                     width="87"
                     height="117"
                   />
                 </div>
-                <p class="products-link">Моноподы для селфи</p></a
+                <p class="products-link">Моноподы <br />для селфи</p></a
               >
             </li>
             <li class="site-product">
-              <a href="#"
+              <a href="#" class="link"
                 ><div class="image-product-wrapper">
                   <img
                     src="images/action-cam.svg"
-                    alt="Экшн-камеры"
+                    alt="Экшн-камеры."
                     class="action-cam product-image"
                     width="72"
                     height="87"
@@ -557,11 +570,11 @@
               >
             </li>
             <li class="site-product">
-              <a href="#"
+              <a href="#" class="link"
                 ><div class="image-product-wrapper">
                   <img
                     src="images/fitness-watch.svg"
-                    alt="Фитнес-браслеты"
+                    alt="Фитнес-браслеты."
                     class="fitness-watch product-image"
                     width="108"
                     height="66"
@@ -571,11 +584,11 @@
               >
             </li>
             <li class="site-product">
-              <a href="#"
+              <a href="#" class="link"
                 ><div class="image-product-wrapper">
                   <img
                     src="images/smart-watch.svg"
-                    alt="Умные часы"
+                    alt="Умные часы."
                     class="smart-watch product-image"
                     width="57"
                     height="98"
@@ -585,11 +598,11 @@
               >
             </li>
             <li class="site-product">
-              <a href="#"
+              <a href="#" class="link"
                 ><div class="image-product-wrapper">
                   <img
                     src="images/drone.svg"
-                    alt="Квадрокоптеры"
+                    alt="Квадрокоптеры."
                     class="drone product-image"
                     width="133"
                     height="70"
@@ -601,83 +614,98 @@
           </ul>
         </div>
       </section>
-      <section class="information-section container">
-        <div class="information-list">
-          <ul class="information-items reset-list">
-            <li><button class="information-item-shipping">Доставка</button></li>
-            <li>
-              <button class="information-item-guarantee">Гарантия</button>
-            </li>
-            <li><button class="information-item-credit">Кредит</button></li>
-          </ul>
-        </div>
-        <div class="delivery-information container">
-          <section class="delivery-info-and-image">
-            <div class="shipping-info-and-image">
-              <div class="shipping-information-wrapper">
-                <h2 class="shipping section-font">Доставка</h2>
-                <p class="shipping-subtitle-information gray-color">
-                  Мы с удовольствием доставим ваш товар прямо к вашему подъезду
-                  совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его
-                  на ваш этаж.
-                </p>
+      <div class="information-section-wrapper">
+        <section class="information-section container">
+          <div class="information-list">
+            <ul class="information-items reset-list">
+              <li>
+                <button class="information-item-shipping">
+                  <span class="information-item-shipping-text">Доставка</span>
+                </button>
+              </li>
+              <li>
+                <button class="information-item-info more-info">
+                  Гарантия
+                </button>
+              </li>
+              <li>
+                <button class="information-item-info more-info">Кредит</button>
+              </li>
+            </ul>
+          </div>
+          <div class="delivery-information container">
+            <section class="delivery-info-and-image">
+              <div class="shipping-info-and-image">
+                <div class="shipping-information-wrapper">
+                  <h2 class="shipping section-font">Доставка</h2>
+                  <p class="shipping-subtitle-information gray-color">
+                    Мы с удовольствием доставим ваш товар прямо<br />
+                    к вашему подъезду совершенно бесплатно! Ведь<br />
+                    мы неплохо заработаем, поднимая его на ваш этаж.
+                  </p>
+                </div>
+                <img
+                  src="images/delivery-man.svg"
+                  alt="delivery-man."
+                  width="136"
+                  height="165"
+                  class="delivery-man"
+                />
               </div>
-              <img
-                src="images/delivery-man.svg"
-                alt="delivery-man"
-                width="136"
-                height="165"
-                class="delivery-man"
-              />
-            </div>
-            <div class="shipping-info-and-image visually-hidden">
-              <div class="shipping-information-wrapper">
-                <h2 class="shipping section-font">Гарантия</h2>
-                <p class="shipping-subtitle-information gray-color">
-                  Если из-за возгорания купленного у нас товара у вас сгорит дом
-                  — не переживайте, мы выдадим вам новый. Товар, не дом, конечно
-                  же.
-                </p>
+              <div class="shipping-info-and-image visually-hidden">
+                <div class="shipping-information-wrapper">
+                  <h2 class="shipping section-font">Гарантия</h2>
+                  <p class="shipping-subtitle-information gray-color">
+                    Если из-за возгорания купленного у нас товара у вас сгорит
+                    дом — не переживайте, мы выдадим вам новый. Товар, не дом,
+                    конечно же.
+                  </p>
+                </div>
+                <img
+                  src="images/guarantee.svg"
+                  alt="delivery-man."
+                  width="136"
+                  height="165"
+                  class="delivery-man"
+                />
               </div>
-              <img
-                src="images/guarantee.svg"
-                alt="delivery-man"
-                width="136"
-                height="165"
-                class="delivery-man"
-              />
-            </div>
-            <div class="shipping-info-and-image visually-hidden">
-              <div class="shipping-information-wrapper">
-                <h2 class="shipping section-font">Кредит</h2>
-                <p class="shipping-subtitle-information gray-color">
-                  Залезть в долговую яму стало проще! Кредитные консультанты
-                  подберут для вас наиболее выгодные условия кредита. Выгодные
-                  для банка, разумеется.
-                </p>
+              <div class="shipping-info-and-image visually-hidden">
+                <div class="shipping-information-wrapper">
+                  <h2 class="shipping section-font">Кредит</h2>
+                  <p class="shipping-subtitle-information gray-color">
+                    Залезть в долговую яму стало проще! Кредитные консультанты
+                    подберут для вас наиболее выгодные условия кредита. Выгодные
+                    для банка, разумеется.
+                  </p>
+                </div>
+                <img
+                  src="images/credit.svg"
+                  alt="delivery-man."
+                  width="136"
+                  height="165"
+                  class="delivery-man"
+                />
               </div>
-              <img
-                src="images/credit.svg"
-                alt="delivery-man"
-                width="136"
-                height="165"
-                class="delivery-man"
-              />
-            </div>
-          </section>
-        </div>
-      </section>
+            </section>
+          </div>
+        </section>
+      </div>
       <section class="shipping-information container">
         <div class="delivery-car-wrapper">
           <img
             src="images/delivery-car.svg"
-            alt="delivery-car"
+            alt="delivery-car."
             class="delivery-car"
             width="47"
             height="31"
           />
         </div>
-        <h4 class="rare-items-shipping">Доставим редкий товар под заказ</h4>
+        <button type="button" class="rare-items-shipping">
+          Доставим редкий товар под заказ
+        </button>
+        <span class="info-icon-footer">
+          <span>i</span>
+        </span>
       </section>
       <div class="additional-info container">
         <section class="main-page-style">
@@ -696,14 +724,16 @@
             <li><b>СДИК</b></li>
             <li><b>ТоксБерри</b></li>
           </ul>
-          <a href="#" class="main__more-about-us">Подробнее o нас</a>
+          <button type="submit" class="main__more-about-us more-info">
+            Подробнее o нас
+          </button>
         </section>
         <section>
           <span class="main-page-decor"></span>
           <h2 class="main__contact section-font decor">Контакты</h2>
           <p class="main__contact-subtitle-information gray-color">
-            Вы можете забрать товар сами, заехав в наш офис. Заодно сможете
-            проверить работоспособность покупки.
+            Вы можете забрать товар сами, заехав в наш офис.<br />
+            Заодно сможете проверить работоспособность покупки.
           </p>
           <h3 class="main__contacts-subtitle section-font">
             Интернет-магазин «Девайс»
@@ -712,8 +742,8 @@
             <p class="main__contacts-address-text gray-color">
               Санкт-Петербург, набережная реки Карповки, 5, литера П.
             </p>
-            <a class="main__contacts-phone gray-color" href="tel:+78128121212"
-              >Тел.: +7 (812) 812-12-12</a
+            <a class="main__contacts-phone gray-color" href="tel:+78128121212">
+              +7 (812) 812-12-12</a
             >
           </address>
           <h3 class="main__contacts-subtitle section-font">Время работы</h3>
@@ -725,7 +755,9 @@
               сб—вс: c 10:00 до 19:00
             </li>
           </ul>
-          <a href="#" class="contact-us-button">Напишите нам</a>
+          <button type="submit" class="contact-us-button more-info">
+            Напишите нам
+          </button>
         </section>
       </div>
       <section class="subscribe">
@@ -741,18 +773,22 @@
             </p>
           </div>
           <div class="footer__enter-e-mail">
-            <div class="input-wrapper">
+            <form
+              action="https://echo.htmlacademy.ru"
+              class="input-wrapper"
+              method="post"
+            >
               <label class="main-page-enter-email">
                 <input type="text" class="e-mail" placeholder="Ваш e-mail" />
               </label>
               <button type="submit" name="Подписаться" class="subscribe-button">
                 Подписаться
               </button>
-            </div>
+            </form>
             <div class="free-notify">
               <img
                 src="images/verify-button.svg"
-                alt="verify-button"
+                alt="verify-button."
                 width="15"
                 height="14"
               />
@@ -767,44 +803,48 @@
       <div class="container">
         <img
           src="images/name-site-for-footer.svg"
-          alt="site-name"
+          alt="site-name."
           width="145"
           height="36"
+          class="logo-image"
         />
         <section class="footer__information">
           <p class="footer__address">
-            Санкт-Петербург, набережная реки Карповки, 5, литера П.
+            Санкт-Петербург, набережная <br />
+            реки Карповки, 5, литера П.
           </p>
           <ul class="footer__social-items reset-list">
-            <li><a href="#" class="shipping-footer">Доставка</a></li>
-            <li><a href="#" class="guarantee-footer">Гарантия</a></li>
-            <li><a href="#" class="contacts-footer">Контакты</a></li>
+            <li><a href="#" class="shipping-footer link">Доставка</a></li>
+            <li><a href="#" class="guarantee-footer link">Гарантия</a></li>
+            <li><a href="#" class="contacts-footer link">Контакты</a></li>
           </ul>
-          <a href="tel:+78128121212" class="contacts-phone-footer"
+          <a href="tel:+78128121212" class="contacts-phone-footer link"
             >Тел.: +7 (812) 812-12-12</a
           >
         </section>
         <div class="footer-social-links">
-          <span class="decor-footer"></span>
           <ul class="footer__social-list reset-list">
             <li class="footer__social-item">
-              <a href="https://t.me/htmlacademy"
-                ><img src="images/telegram-logo.svg" alt="telegram-logo"
+              <a href="https://t.me/htmlacademy" class="link"
+                ><img src="images/telegram-logo.svg" alt="telegram-logo."
               /></a>
             </li>
             <li class="footer__social-item">
-              <a href="https://www.youtube.com/user/htmlacademyru"
-                ><img src="images/youtube-logo.svg" alt="youtube-logo"
+              <a href="https://www.youtube.com/user/htmlacademyru" class="link"
+                ><img src="images/youtube-logo.svg" alt="youtube-logo."
               /></a>
             </li>
             <li class="footer__social-item">
-              <a href="https://twitter.com/htmlacademy_ru"
-                ><img src="images/twitter-logo.svg" alt="twitter-logo"
+              <a href="https://twitter.com/htmlacademy_ru" class="link"
+                ><img src="images/twitter-logo.svg" alt="twitter-logo."
               /></a>
             </li>
           </ul>
-          <a href="https://htmlacademy.ru/"
-            ><img src="images/academy-name.svg" alt="academy-name"
+          <a href="https://htmlacademy.ru/" class="link"
+            ><img
+              src="images/academy-name.svg"
+              alt="academy-name."
+              class="academy-footer"
           /></a>
         </div>
       </div>
@@ -825,26 +865,37 @@
             method="post"
           >
             <div class="login-wrapper">
-              <p class="field-group">
+              <div class="field-group field-group-error">
                 <label class="label" for="auth-login">Ваше имя:</label>
-                <input
-                  class="auth-form-field field"
-                  type="text"
-                  id="auth-login"
-                  name="auth-login"
-                  placeholder="Введите имя"
-                />
-              </p>
-              <p class="field-group">
+                <div class="modal-input-wrapper">
+                  <input
+                    class="auth-form-field field"
+                    type="text"
+                    id="auth-login"
+                    name="auth-login"
+                    placeholder="Введите имя"
+                  />
+                  <span class="modal-icons">
+                    <img src="images/modal-name-icon.svg" alt="modal-name" />
+                  </span>
+                </div>
+                <p class="modal-input-error">Забавный у вас адрес</p>
+              </div>
+              <div class="field-group">
                 <label class="label" for="auth-email">Ваш e-mail:</label>
-                <input
-                  class="auth-form-field field"
-                  type="email"
-                  id="auth-email"
-                  name="auth-email"
-                  placeholder="почта"
-                />
-              </p>
+                <div class="modal-input-wrapper">
+                  <input
+                    class="auth-form-field field"
+                    type="email"
+                    id="auth-email"
+                    name="auth-email"
+                    placeholder="почта"
+                  />
+                  <span class="modal-icons">
+                    <img src="images/modal-email-icon.svg" alt="modal-email" />
+                  </span>
+                </div>
+              </div>
             </div>
             <div class="form-text-wrapper">
               <p class="field-group">
@@ -883,7 +934,9 @@
                 </div>
               </div>
             </div>
-            <button type="submit" class="form-sending-button">Отправить</button>
+            <button type="submit" class="form-sending-button more-info">
+              Отправить
+            </button>
           </form>
         </section>
       </div>

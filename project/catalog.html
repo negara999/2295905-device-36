@@ -4,13 +4,16 @@
     <meta charset="utf-8" />
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
   </head>
   <body>
-    <header class="page-header container">
-      <a href="index.html" class="header-logo">
+    <header class="page-header container catalog-header">
+      <h1 class="visually-hidden">device-catalog</h1>
+      <a href="index.html" class="header-logo link">
         <img
           src="images/logo.svg"
-          alt="site-name"
+          alt="site-name."
           width="145"
           height="36"
           class="logo-image"
@@ -19,14 +22,14 @@
       <nav class="navigation">
         <div class="header-container">
           <div class="page-header__search-box">
-            <img
-              src="images/search.svg"
-              alt="search-icon"
-              class="page-header__search-icon"
-              width="16"
-              height="16"
-            />
             <label class="search-box-label">
+              <img
+                src="images/search.svg"
+                alt="search-icon."
+                class="page-header__search-icon"
+                width="16"
+                height="16"
+              />
               <input
                 type="search"
                 placeholder="Текст поиска"
@@ -40,10 +43,10 @@
           <div class="heading-items">
             <ul class="navigation-items-header reset-list">
               <li class="navigation-item">
-                <a href="#" class="navigation-user navigation-item__user"
+                <a href="#" class="navigation-user navigation-item__user link"
                   ><img
                     src="images/login.svg"
-                    alt="search-icon"
+                    alt="search-icon."
                     class="search-icon"
                     width="15"
                     height="12"
@@ -51,15 +54,15 @@
                 >
               </li>
               <li class="navigation-item reset-link">
-                <a href="#" class="navigation-logout gray-color reset-link"
+                <a href="#" class="navigation-logout gray-color reset-link link"
                   ><span class="header-navigation">Выйти</span></a
                 >
               </li>
-              <li class="navigation-item">
-                <a href="#" class="navigation-compare"
+              <li class="navigation-item compare-navigation">
+                <a href="#" class="navigation-compare link"
                   ><img
                     src="images/diagram.svg"
-                    alt="search-icon"
+                    alt="search-icon."
                     class="search-icon"
                     width="10"
                     height="12"
@@ -67,11 +70,11 @@
                 >
               </li>
               <li class="navigation-item">
-                <a href="#" class="navigation-shopping-cart">
+                <a href="#" class="navigation-shopping-cart link">
                   <span class="shopping-cart-content">2</span>
                   <img
                     src="images/cart.svg"
-                    alt="search-icon"
+                    alt="search-icon."
                     class="search-icon"
                     width="16"
                     height="14"
@@ -85,7 +88,7 @@
       <div class="header__navigation-items container">
         <ul class="main__navigation reset-list">
           <li class="main__navigation-item">
-            <a href="#" class="main-navigatio-link">
+            <a href="#" class="main-navigatio-link link">
               <h3 class="main__navigation-button section-font">
                 Каталог товаров
               </h3>
@@ -93,7 +96,7 @@
             <button type="button" class="catalog__search-sub-navigation-items">
               <img
                 src="images/ellipse-2.svg"
-                alt="catalog-button"
+                alt="catalog-button."
                 width="50"
                 height="50"
               />
@@ -104,45 +107,45 @@
           <li class="main__navigation-item">
             <a
               href="#"
-              class="main__navigation-button-shipping navigation-buttons"
+              class="main__navigation-button-shipping navigation-buttons link"
               >Доставка</a
             >
           </li>
           <li class="navigation-item">
             <a
               href="#"
-              class="main__navigation-button-guarantee navigation-buttons"
+              class="main__navigation-button-guarantee navigation-buttons link"
               >Гарантия</a
             >
           </li>
           <li class="navigation-item">
             <a
               href="#"
-              class="main__navigation-button-contacts navigation-buttons"
+              class="main__navigation-button-contacts navigation-buttons link"
               >Контакты</a
             >
           </li>
         </ul>
       </div>
-      <div class="sub-catalog-items visually-hidden">
+      <div class="sub-catalog-items">
         <ul class="catalog__sub-navigation-items reset-link reset-list">
           <li class="catalog__navigation-item">
-            <a href="#">Виртуальная реальность</a>
+            <a href="#" class="link">Виртуальная реальность</a>
           </li>
           <li class="catalog__sub-navigation-item">
-            <a href="#">Моноподы для ceлфи</a>
+            <a href="#" class="link">Моноподы для ceлфи</a>
           </li>
           <li class="catalog__sub-navigation-item">
-            <a href="#">Экшн-камеры</a>
+            <a href="#" class="link">Экшн-камеры</a>
           </li>
           <li class="catalog__sub-navigation-item">
-            <a href="#">Фитнес-браслеты</a>
+            <a href="#" class="link">Фитнес-браслеты</a>
           </li>
           <li class="catalog__sub-navigation-item">
-            <a href="#">Умные часы</a>
+            <a href="#" class="link">Умные часы</a>
           </li>
           <li class="catalog__sub-navigation-item">
-            <a href="#">Квадрокоптеры</a>
+            <a href="#" class="link">Квадрокоптеры</a>
           </li>
         </ul>
       </div>
@@ -151,9 +154,11 @@
       <div class="container">
         <h2 class="main__page-title section-font">Моноподы для селфи</h2>
         <div class="main-page-selection">
-          <p class="main">Главная</p>
-          <p class="products-catalog">Каталог товаров</p>
-          <p class="main-page-product">Моноподы для селфи</p>
+          <a href="/project/index.html" class="main next-arrow link">Главная</a>
+          <a href="#" class="products-catalog next-arrow link"
+            >Каталог товаров</a
+          >
+          <a href="#" class="main-page-product link">Моноподы для селфи</a>
         </div>
         <div class="catalog-page-wrapper">
           <div class="product-properties">
@@ -276,7 +281,12 @@
                   </li>
                 </ul>
               </div>
-              <a href="#" class="show-more">Показать</a>
+              <button
+                type="button"
+                class="show-more more-info show-more-filter"
+              >
+                Показать
+              </button>
             </section>
           </div>
           <div class="catalog-wrapper">
@@ -290,18 +300,22 @@
                   </select>
                 </div>
                 <div class="page-arrows">
-                  <img
-                    src="images/arrow-up.svg"
-                    alt="arrow-button"
-                    width="12"
-                    height="10"
-                  />
-                  <img
-                    src="images/arrow-down-near-up.svg"
-                    alt="arrow-button"
-                    width="12"
-                    height="10"
-                  />
+                  <button type="button" class="arrow-buttons">
+                    <img
+                      src="images/arrow-up.svg"
+                      alt="arrow-button."
+                      width="12"
+                      height="10"
+                    />
+                  </button>
+                  <button type="button" class="arrow-buttons">
+                    <img
+                      src="images/arrow-down-near-up.svg"
+                      alt="arrow-button."
+                      width="12"
+                      height="10"
+                    />
+                  </button>
                 </div>
               </div>
               <div class="selfie-sticks">
@@ -309,7 +323,7 @@
                   <div class="amateur-selfie-stick catalog-products-items">
                     <img
                       src="images/amateur-selfie-stick.png"
-                      alt="selfie-stick"
+                      alt="selfie-stick."
                       width="360"
                       height="380"
                     />
@@ -324,7 +338,7 @@
                   <div class="professional-selfie-stick catalog-products-items">
                     <img
                       src="images/professional-selfie-stick.png"
-                      alt="selfie-stick"
+                      alt="selfie-stick."
                       class="professional-selfie-stick"
                       width="360"
                       height="380"
@@ -340,7 +354,7 @@
                   <div class="waterproof-selfie-stick catalog-products-items">
                     <img
                       src="images/waterproof-selfie-stick.png"
-                      alt="selfie-stick"
+                      alt="selfie-stick."
                       width="360"
                       height="380"
                     />
@@ -355,45 +369,49 @@
                   <div class="carry-with-selfie-stick catalog-products-items">
                     <img
                       src="images/carry-with-selfie-stick.png"
-                      alt="selfie-stick"
+                      alt="selfie-stick."
                       width="360"
                       height="380"
                     />
                     <div class="info-image-wrapper">
                       <h5 class="selfie-stick">
-                        Селфи-палка <br />
-                        «Следуй за мной»
+                        Селфи-палка «Следуй <br />
+                        за мной»
                       </h5>
                       <h5 class="price">1 500 ₽</h5>
                     </div>
                   </div>
                 </section>
                 <div class="more-products-wrapper">
-                  <a href="#" class="more-products">Загрузить ещё</a>
+                  <a href="#" class="more-products link products-wrapper"
+                    >Загрузить ещё</a
+                  >
                 </div>
                 <ul class="reset-list page-selection">
-                  <li><a href="#" class="turn-back-page">Назад</a></li>
+                  <li><a href="#" class="turn-back-page link">Назад</a></li>
                   <li>
                     <ul class="pagination-numbers reset-list">
                       <li class="pagination-selector">
-                        <a href="#" class="first-page page-selector">1</a>
+                        <a href="#" class="first-page page-selector link">1</a>
                       </li>
                       <li class="pagination-selector">
-                        <a href="#" class="second-page page-selector">2</a>
+                        <a href="#" class="second-page page-selector link">2</a>
                       </li>
                       <li class="pagination-selector">
-                        <a href="#" class="third-page page-selector">3</a>
+                        <a href="#" class="third-page page-selector link">3</a>
                       </li>
                       <li class="pagination-selector">
-                        <a href="#" class="other-pages page-selector">...</a>
+                        <a href="#" class="other-pages page-selector link"
+                          >...</a
+                        >
                       </li>
                       <li class="pagination-selector">
-                        <a href="#" class="last-page page-selector">15</a>
+                        <a href="#" class="last-page page-selector link">15</a>
                       </li>
                     </ul>
                   </li>
 
-                  <li><a href="#" class="turn-next-page">Вперёд</a></li>
+                  <li><a href="#" class="turn-next-page link">Вперёд</a></li>
                 </ul>
               </div>
             </div>
@@ -401,11 +419,11 @@
         </div>
       </div>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer catalog-footer">
       <div class="container">
         <img
           src="images/name-site-for-footer.svg"
-          alt="site-name"
+          alt="site-name."
           width="145"
           height="36"
         />
@@ -414,9 +432,9 @@
             Санкт-Петербург, набережная реки Карповки, 5, литера П.
           </p>
           <ul class="footer__social-items reset-list">
-            <li><a href="#" class="shipping-footer">Доставка</a></li>
-            <li><a href="#" class="guarantee-footer">Гарантия</a></li>
-            <li><a href="#" class="contacts-footer">Контакты</a></li>
+            <li><a href="#" class="shipping-footer link">Доставка</a></li>
+            <li><a href="#" class="guarantee-footer link">Гарантия</a></li>
+            <li><a href="#" class="contacts-footer link">Контакты</a></li>
           </ul>
           <a href="tel:+78128121212" class="contacts-phone-footer"
             >Тел.: +7 (812) 812-12-12</a
@@ -427,22 +445,22 @@
           <ul class="footer__social-list reset-list">
             <li class="footer__social-item">
               <a href="https://t.me/htmlacademy"
-                ><img src="images/telegram-logo.svg" alt="telegram-logo"
+                ><img src="images/telegram-logo.svg" alt="telegram-logo."
               /></a>
             </li>
             <li class="footer__social-item">
               <a href="https://www.youtube.com/user/htmlacademyru"
-                ><img src="images/youtube-logo.svg" alt="youtube-logo"
+                ><img src="images/youtube-logo.svg" alt="youtube-logo."
               /></a>
             </li>
             <li class="footer__social-item">
               <a href="https://twitter.com/htmlacademy_ru"
-                ><img src="images/twitter-logo.svg" alt="twitter-logo"
+                ><img src="images/twitter-logo.svg" alt="twitter-logo."
               /></a>
             </li>
           </ul>
           <a href="https://htmlacademy.ru/"
-            ><img src="images/academy-name.svg" alt="academy-name"
+            ><img src="images/academy-name.svg" alt="academy-name."
           /></a>
         </div>
       </div>
